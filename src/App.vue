@@ -1,10 +1,36 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/admin">Admin</router-link>
   </div>
   <router-view/>
 </template>
+
+<script>
+import firebase from 'firebase' // firebase general stuff
+import {} from '@/firebase.js' // all from firebase.js file
+
+import { onBeforeMount} from 'vue' // lifecycle hook
+import { useRouter, useRoute } from 'vue-router' // able to use methods from vue-router (replace etc)
+
+export default {
+  setup() {
+    const router = useRouter(); // just declaring them
+    const route = useRoute();
+
+    onBeforeMount(() => { // 
+      firebase.auth().onAuthStateChanged((user) => {
+        if (!user) { // dont have a user - not logged in)
+          router.replace('/login') // send them to this place
+        }
+        else if (route.path == '/login' || route.path == '/register') { // if logged in on this page, send us to home
+          router.replace('/'); // test: go to frontpage, should redirect
+        }
+      })
+    })
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
