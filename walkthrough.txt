@@ -1,5 +1,6 @@
 #1 Make project
-#2 Add firebase SDK : https://firebase.google.com/docs/web/setup ( npm install --save firebase ) // use sudo npm install --save firebase if you need admin rights
+#2 Add firebase SDK : https://firebase.google.com/docs/web/setup 
+   ( npm install --save firebase ) // use sudo npm install --save firebase if you need admin rights
 #3 Create firebase + register app : https://console.firebase.google.com/
   #3.1 Copy firebase SDK information (login, api key, etc)
 
