@@ -1,0 +1,19 @@
+#1 Make project
+#2 Add firebase SDK : https://firebase.google.com/docs/web/setup ( npm install --save firebase ) // use sudo npm install --save firebase if you need admin rights
+#3 Create firebase + register app : https://console.firebase.google.com/
+  #3.1 Copy firebase SDK information (login, api key, etc)
+
+
+
+#4 Create FireStore database ( go to test mode )
+  #4.1 Create a collection(users, projects, products, etc) - not needed
+
+#5 Enable auth - sign-in methods + create a user
+
+#6   Register app for Web in firebase
+#6.1 Add firebase.js file to src folder - copy code from firebase (go to cogwheel, project setting, scroll to field with info (api key, authDomain etc) )
+
+
+# Copy stuff and and test (remember npm install, if you git cloned it)
+# 
+# 
