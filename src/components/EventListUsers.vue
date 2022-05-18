@@ -9,7 +9,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="{ id, name, task } in projects" :key="id">
+        <tr v-for="{ id, name, task } in events" :key="id">
           <td>{{ name }}</td>
           <td>{{ task }}</td>
           <td>
@@ -23,13 +23,13 @@
 
 <script>
 // useload hook + delete import 
-import { useLoadProjects } from '@/firebase.js'
+import { useLoadEvents } from '@/firebase.js'
 
   export default {
     setup() {
-      const projects = useLoadProjects()
+      const events = useLoadEvents()
 
-      return { projects }
+      return { events }
     } 
   }
 </script>

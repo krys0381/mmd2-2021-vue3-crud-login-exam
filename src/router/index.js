@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Events from '../views/EventsView.vue'
 
 // for editing (CRUD)
 import Edit from '../views/Edit.vue'
@@ -15,8 +15,8 @@ import Register from '../views/Register.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'EventsView',
+    component: Events
   },
   {
     path: '/edit/:id',  // id parameter to know which project we clicked

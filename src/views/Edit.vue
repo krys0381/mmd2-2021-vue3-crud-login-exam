@@ -27,7 +27,7 @@
 <script>
 import { reactive, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { getProject, updateProject } from '@/firebase.js'
+import { getEvent, updateEvent } from '@/firebase.js'
 
 export default {
   setup() {
@@ -38,7 +38,7 @@ export default {
     const route = useRoute()
     // Sometimes we need state that depends on other state - in Vue this is 
     // handled with component computed properties.
-    const projectId = computed(() => route.params.id)
+    const eventId = computed(() => route.params.id)
 
     const form = reactive({
       name: '',
@@ -48,14 +48,14 @@ export default {
     // add an onMounted life-hook that will get the user, based on router id 
     // pull the project from firebase and then assign the values to the fields
     onMounted(async () => {
-      const project = await getProject(projectId.value)
-      form.name = project.name
-      form.task = project.task
+      const event = await getEvent(eventId.value)
+      form.name = event.name
+      form.task = event.task
     })
 
     const update = async () => {
       // once user clicks submit, redirect them to home page or '/'
-      await updateProject(projectId.value, {...form})
+      await updateEvent(eventId.value, {...form})
       router.push('/admin')
       // after create - empty input field
       form.name = ''

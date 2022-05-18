@@ -9,7 +9,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="{ id, name, task } in projects" :key="id">
+        <tr v-for="{ id, name, task } in events" :key="id">
           <td>{{ name }}</td>
           <td>{{ task }}</td>
           <td>
@@ -21,7 +21,7 @@
               </button>
             </router-link>
             <!-- use deleteProject and pass the id -->
-            <button class="btn btn-danger btn-sm" @click="deleteProject(id)">
+            <button class="btn btn-danger btn-sm" @click="deleteEvent(id)">
               Delete
             </button>
              <!--  -->
@@ -34,13 +34,13 @@
 
 <script>
 // useload hook + delete import 
-import { useLoadProjects, deleteProject  } from '@/firebase.js'
+import { useLoadEvents, deleteEvent  } from '@/firebase.js'
 
   export default {
     setup() {
-      const projects = useLoadProjects()
+      const events = useLoadEvents()
 
-      return { projects, deleteProject }
+      return { events, deleteEvent }
     } 
   }
 </script>

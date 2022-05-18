@@ -23,7 +23,7 @@
       </div>
 
       <button type="submit" class="btn btn-success mt-3">
-        Create Project
+        Create Event
       </button>
     </form>
   </div>
@@ -31,7 +31,7 @@
 
 <script>
 import { reactive } from 'vue'
-import { createProject } from '@/firebase.js' // maybe this make error
+import { createEvent } from '@/firebase.js' // maybe this make error
 
   export default {
    setup() {
@@ -42,7 +42,7 @@ import { createProject } from '@/firebase.js' // maybe this make error
 
      const onSubmit = async () => {
        // spread operator to add field + invoking our createProject function from firebase.js
-       await createProject({ ...form }) 
+       await createEvent({ ...form }) 
        // after create - empty input field
        form.name = ''
        form.task = ''
