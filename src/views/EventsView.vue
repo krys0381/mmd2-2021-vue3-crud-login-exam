@@ -1,8 +1,7 @@
 <template>
   <div class="events">
+    <HeaderComponent />
     <h1>Willkommen to Events</h1>
-
-    <img alt="Vue logo" src="../assets/logo.png">
 
     <EventListUsers />
   </div>
@@ -11,11 +10,13 @@
 <script>
 // Stuff for CRUD
 
+import HeaderComponent from '../components/HeaderComponent.vue'
 import EventListUsers from '@/components/EventListUsers.vue'
 
 export default {
   name: 'EventsView',
   components: {
+    HeaderComponent,
     EventListUsers
   }
 }

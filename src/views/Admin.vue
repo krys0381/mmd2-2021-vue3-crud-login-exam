@@ -1,5 +1,6 @@
 <template>
   <div class="about"> 
+    <HeaderComponent />
     <h1>This is an admin page</h1>
     <h1>Welcome {{ name }}</h1>
     <button  @click="logout">  <!-- v-if="user"  -->
@@ -14,6 +15,8 @@
 
 <script>
 // Stuff for Login (Auth)
+import HeaderComponent from '../components/HeaderComponent.vue'
+
 import firebase from 'firebase'
 import { ref, onBeforeMount } from 'vue'
 import { /*useRoute,*/ useRouter } from 'vue-router'
@@ -25,6 +28,7 @@ export default {
   name: 'Home',
   components: {
  
+    HeaderComponent,
     EventCreate,
     EventList
 

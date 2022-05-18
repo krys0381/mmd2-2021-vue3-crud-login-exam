@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Events from '../views/EventsView.vue'
+import Homepage from '../views/HomepageView.vue'
 
 // for editing (CRUD)
 import Edit from '../views/Edit.vue'
@@ -15,6 +16,11 @@ import Register from '../views/Register.vue'
 const routes = [
   {
     path: '/',
+    name: 'HomepageView',
+    component: Homepage
+  },
+  {
+    path: '/events',
     name: 'EventsView',
     component: Events
   },
