@@ -38,9 +38,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/shared.scss";
+
 .header-row {
     display: flex;
-    background-color: #7E42BE;
+    background-color: $basecolor;
     padding: 20px 0 20px 0;
 }
 
@@ -74,10 +76,10 @@ export default {
 
     a {
         font-weight: normal;
-        color: #E8E1F0;
+        color: $backgroundcolor;
 
         &.router-link-exact-active {
-          color: #F2A35F;
+          color: $accentlightcolor;
         }
     }
 }
@@ -93,7 +95,7 @@ export default {
     .btn {
         background: transparent linear-gradient(108deg, #F5F5F54D 0%, #10041C00 100%) 0% 0% no-repeat padding-box;
         box-shadow: inset 5px 5px 10px #F5F5F51A;
-        border: 1px solid #D9C2F2;
+        border: 1px solid $lightcolor;
         border-radius: 0;
         opacity: 1;
         backdrop-filter: blur(40px);
