@@ -51,19 +51,28 @@
             </div>
         </div>
         <IntroductionComponent />
+        <OurServicesComponent />
+        <EventsPreviewComponent />
+        <OurPartnersComponent />
     </div>
 </template>
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
 import IntroductionComponent from '../components/HomepageComponents/IntroductionComponent.vue'
+import OurServicesComponent from '../components/HomepageComponents/OurServicesComponent.vue'
+import EventsPreviewComponent from '../components/HomepageComponents/EventsPreviewComponent.vue'
+import OurPartnersComponent from '../components/HomepageComponents/OurPartnersComponent.vue'
 
 export default {
   name: 'HomepageView',
 
   components:{
     HeaderComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    OurServicesComponent,
+    EventsPreviewComponent,
+    OurPartnersComponent
   }
 }
 </script>

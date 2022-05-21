@@ -21,7 +21,9 @@
                     <div class="introduction-text-container"><h2>OUR STORY</h2></div>
                     <div class="introduction-text-container"><p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p></div>
                     <div class="introduction-text-container"><p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p></div>
-                    <div class="introduction-text-container"></div>
+                    <div class="introduction-text-container">
+                        <button type="button" class="btn btn-primary btn-lg">READ MORE</button>
+                    </div>
                 </div>
             </div>
 
@@ -37,15 +39,16 @@ export default {
 
 <style scoped lang="scss">
 @import "../../assets/shared.scss";
-@include heading2;
-@include heading4;
-@include paragraph1;
+@include dark-heading2;
+@include dark-heading4;
+@include dark-paragraph1;
 
 .introduction-row {
     width: 100%;
     height: 100%;
     background: $backgroundcolor 0% 0% no-repeat padding-box;
-    opacity: 1; 
+    opacity: 1;
+    padding: 30px 0;
 }
 
 .introduction-container {
@@ -65,7 +68,7 @@ export default {
     // Text
 
     .introduction-text-container {
-        width: 100%;
+        width: 85%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -79,6 +82,14 @@ export default {
             border: 1.5px solid $shadecolor;
             opacity: 1;
             margin-right: 20px;
+        }
+
+        .btn {
+            background-color: $whitecolor;
+            border-radius: 0;
+            border-color: $whitecolor;
+            color: $basecolor;
+            padding: 15px;
         }
     }
 }

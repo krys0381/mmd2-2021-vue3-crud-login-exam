@@ -94,12 +94,9 @@ export default {
 
     .btn {
         background: transparent linear-gradient(108deg, #F5F5F54D 0%, #10041C00 100%) 0% 0% no-repeat padding-box;
-        box-shadow: inset 5px 5px 10px #F5F5F51A;
         border: 1px solid $lightcolor;
         border-radius: 0;
         opacity: 1;
-        backdrop-filter: blur(40px);
-        -webkit-backdrop-filter: blur(40px);
         font-size: 18px;
     }
 }

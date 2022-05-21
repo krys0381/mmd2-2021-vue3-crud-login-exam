@@ -9,63 +9,116 @@ $accentlightcolor: #F2A35F;
 
 @mixin heading1 {
     h1 {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-88)/114.4px var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0);
         text-align: center;
         font: normal normal bold 50px Poppins;
         letter-spacing: 0px;
-        color: #E8E1F0;
+        color: $backgroundcolor;
         opacity: 1;
         margin: 0;
     }
 }
 
-@mixin heading2 {
+@mixin dark-heading2 {
     h2 {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-88)/105.6px var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0);
         text-align: left;
         font: normal normal bold 70px Poppins;
         letter-spacing: 0px;
-        color: #10041C;
+        color: $shadecolor;
+        opacity: 1;
+    }
+}
+
+@mixin light-heading2 {
+    h2 {
+        text-align: left;
+        font: normal normal bold 70px Poppins;
+        letter-spacing: 0px;
+        color: $backgroundcolor;
         opacity: 1;
     }
 }
 
 @mixin heading3 {
     h3 {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 28px/57.2px var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0);
         text-align: center;
         font: normal normal normal 20px Poppins;
         letter-spacing: 0px;
-        color: #E8E1F0;
+        color: $backgroundcolor;
         opacity: 1;
         margin: 0;
     }
 }
 
-@mixin heading4 {
+@mixin dark-heading4 {
     h4 {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0);
         text-align: left;
         font: normal normal normal 18px/27px Poppins;
         letter-spacing: 0px;
-        color: #10041C;
+        color: $shadecolor;
         opacity: 1;
         margin: 0;
     }
 }
 
-@mixin paragraph1 {
-    p {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-poppins);
-        letter-spacing: var(--unnamed-character-spacing-0);
+@mixin light-heading4 {
+    h4 {
         text-align: left;
         font: normal normal normal 18px/27px Poppins;
         letter-spacing: 0px;
-        color: #10041C;
+        color: $backgroundcolor;
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+@mixin dark-heading5 {
+    h5 {
+        text-align: left;
+        font: normal normal bold 18px/27px Poppins;
+        letter-spacing: 0px;
+        color: $shadecolor;
+        opacity: 1;
+    }
+}
+
+@mixin light-heading5 {
+    h5 {
+        text-align: left;
+        font: normal normal bold 18px/27px Poppins;
+        letter-spacing: 0px;
+        color: $backgroundcolor;
+        opacity: 1;
+    }
+}
+
+@mixin dark-paragraph1 {
+    p {
+        text-align: left;
+        font: normal normal normal 16px Poppins;
+        letter-spacing: 0px;
+        color: $shadecolor;
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+@mixin light-paragraph1 {
+    p {
+        text-align: left;
+        font: normal normal normal 16px Poppins;
+        letter-spacing: 0px;
+        color: $backgroundcolor;
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+@mixin date {
+    .date {
+        text-align: left;
+        font: normal normal bold 42px/27px Poppins;
+        letter-spacing: 0px;
+        color: $lightcolor;
         opacity: 1;
     }
 }
