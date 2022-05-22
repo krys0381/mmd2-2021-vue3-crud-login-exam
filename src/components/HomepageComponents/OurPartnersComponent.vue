@@ -49,7 +49,6 @@ export default {
 @import "../../assets/shared.scss";
 @include dark-heading2;
 @include dark-heading4;
-// @include dark-heading5;
 @include dark-paragraph1; 
 
 .ourpartners-row {

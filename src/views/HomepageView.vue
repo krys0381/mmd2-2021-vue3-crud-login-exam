@@ -19,7 +19,7 @@
 
                     <div class="hero-container">
                         <div id="hero-btn">
-                            <button type="button" class="btn btn-primary btn-lg">JOIN OUR EVENT NOW!</button>
+                            <button type="button" class="btn btn-primary btn-lg"><h6>JOIN OUR EVENT NOW!</h6></button>
                         </div>
                     </div>
 
@@ -54,6 +54,10 @@
         <OurServicesComponent />
         <EventsPreviewComponent />
         <OurPartnersComponent />
+        <TestimonialsComponent />
+        <FollowUsComponent />
+        <NewsletterComponent />
+        <ConclusionComponent />
     </div>
 </template>
 
@@ -63,6 +67,10 @@ import IntroductionComponent from '../components/HomepageComponents/Introduction
 import OurServicesComponent from '../components/HomepageComponents/OurServicesComponent.vue'
 import EventsPreviewComponent from '../components/HomepageComponents/EventsPreviewComponent.vue'
 import OurPartnersComponent from '../components/HomepageComponents/OurPartnersComponent.vue'
+import TestimonialsComponent from '../components/HomepageComponents/TestimonialsComponent.vue'
+import FollowUsComponent from '../components/HomepageComponents/FollowUsComponent.vue'
+import NewsletterComponent from '../components/HomepageComponents/NewsletterComponent.vue'
+import ConclusionComponent from '../components/HomepageComponents/ConclusionComponent.vue'
 
 export default {
   name: 'HomepageView',
@@ -72,15 +80,20 @@ export default {
     IntroductionComponent,
     OurServicesComponent,
     EventsPreviewComponent,
-    OurPartnersComponent
+    OurPartnersComponent,
+    TestimonialsComponent,
+    FollowUsComponent,
+    NewsletterComponent,
+    ConclusionComponent
   }
 }
 </script>
 
 <style scoped lang="scss">
 @import "../assets/shared.scss";
-@include heading1;
+@include light-heading1;
 @include heading3;
+@include heading6;
 
 .homepage-row {
     width: 100%;
@@ -96,7 +109,7 @@ export default {
             justify-content: center;
 
             #hero-heading {
-                width: 50%;
+                width: 75%;
                 height: 25%;
                 margin-bottom: 10px;
             }

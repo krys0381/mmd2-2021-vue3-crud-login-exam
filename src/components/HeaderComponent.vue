@@ -4,10 +4,11 @@
             
             <div class="col-sm-1 p-0"></div>
             <div class="col-6 col-sm-4 p-0">
-                <div class="logo-container">
-                    <div class="logo-box">
-                        <img src="../assets/img/logo.svg" alt="">
-                    </div>
+                <div class="logo-links-container">
+                    <div id="logo-box"><img src="../assets/img/logo.svg" alt=""></div>
+            
+                    <div class="links-box"><a href="">START-UPS</a></div>
+                    <div class="links-box"><a href="https://techhubinvest.com/">INVESTORS</a></div>
                 </div>
             </div>
 
@@ -46,22 +47,42 @@ export default {
     padding: 20px 0 20px 0;
 }
 
-// Logo
-
-.logo-container {
+.logo-links-container {
     display: flex;
     justify-content: start;
     width: 100%;
 
-  .logo-box {
-    display: flex;
-    align-items: center;
+    // Logo
 
-    img {
-        object-fit: cover;
-        height: 65px;
+    #logo-box {
+      display: flex;
+      align-items: center;  
+      img {
+          object-fit: cover;
+          height: 65px;
+      }
     }
-  }
+
+    // Links
+
+    .links-box {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            font: normal normal 500 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: $backgroundcolor;
+            opacity: 1;
+
+            &:hover {
+                color: $accentlightcolor;
+            }
+        }
+    }
 }
 
 // Navigation 
@@ -75,7 +96,7 @@ export default {
     padding: 0 20px 0 0;
 
     a {
-        font-weight: normal;
+        font-weight: 500;
         color: $backgroundcolor;
 
         &.router-link-exact-active {
@@ -93,11 +114,12 @@ export default {
     align-items: center;
 
     .btn {
-        background: transparent linear-gradient(108deg, #F5F5F54D 0%, #10041C00 100%) 0% 0% no-repeat padding-box;
         border: 1px solid $lightcolor;
+        opacity: 1;
         border-radius: 0;
         opacity: 1;
         font-size: 18px;
+        background-color: $basecolor;
     }
 }
 </style>

@@ -7,12 +7,23 @@ $backgroundcolor: #E8E1F0;
 $accentbasecolor: #E69B5A;
 $accentlightcolor: #F2A35F;
 
-@mixin heading1 {
+@mixin light-heading1 {
     h1 {
         text-align: center;
-        font: normal normal bold 50px Poppins;
+        font: normal normal bold 70px Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+@mixin dark-heading1 {
+    h1 {
+        text-align: center;
+        font: normal normal bold 70px Poppins;
+        letter-spacing: 0px;
+        color: $shadecolor;
         opacity: 1;
         margin: 0;
     }
@@ -88,6 +99,17 @@ $accentlightcolor: #F2A35F;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
+    }
+}
+
+@mixin heading6 {
+    h6 {
+        text-align: center;
+        font: normal normal normal 23px Poppins;
+        letter-spacing: 0px;
+        color: $whitecolor;
+        opacity: 1;
+        margin: 0;
     }
 }
 
