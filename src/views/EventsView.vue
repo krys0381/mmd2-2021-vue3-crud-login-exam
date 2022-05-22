@@ -10,7 +10,7 @@
 <script>
 // Stuff for CRUD
 
-import HeaderComponent from '../components/HeaderComponent.vue'
+import HeaderComponent from '../components/Header.vue'
 import EventListUsers from '@/components/EventListUsers.vue'
 
 export default {

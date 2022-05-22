@@ -1,6 +1,6 @@
 <template>
     <div class="homepage">
-        <HeaderComponent />
+        <Header />
         <div class="homepage-row row g-0">
             <div class="col-12 p-0">
                 <div id="homepage-container">
@@ -58,11 +58,12 @@
         <FollowUsComponent />
         <NewsletterComponent />
         <ConclusionComponent />
+        <Footer />
     </div>
 </template>
 
 <script>
-import HeaderComponent from '../components/HeaderComponent.vue'
+import Header from '../components/Header.vue'
 import IntroductionComponent from '../components/HomepageComponents/IntroductionComponent.vue'
 import OurServicesComponent from '../components/HomepageComponents/OurServicesComponent.vue'
 import EventsPreviewComponent from '../components/HomepageComponents/EventsPreviewComponent.vue'
@@ -71,12 +72,13 @@ import TestimonialsComponent from '../components/HomepageComponents/Testimonials
 import FollowUsComponent from '../components/HomepageComponents/FollowUsComponent.vue'
 import NewsletterComponent from '../components/HomepageComponents/NewsletterComponent.vue'
 import ConclusionComponent from '../components/HomepageComponents/ConclusionComponent.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: 'HomepageView',
 
   components:{
-    HeaderComponent,
+    Header,
     IntroductionComponent,
     OurServicesComponent,
     EventsPreviewComponent,
@@ -84,7 +86,8 @@ export default {
     TestimonialsComponent,
     FollowUsComponent,
     NewsletterComponent,
-    ConclusionComponent
+    ConclusionComponent,
+    Footer
   }
 }
 </script>

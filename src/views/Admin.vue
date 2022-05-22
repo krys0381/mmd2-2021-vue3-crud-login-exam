@@ -15,7 +15,7 @@
 
 <script>
 // Stuff for Login (Auth)
-import HeaderComponent from '../components/HeaderComponent.vue'
+import HeaderComponent from '../components/Header.vue'
 
 import firebase from 'firebase'
 import { ref, onBeforeMount } from 'vue'
