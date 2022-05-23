@@ -28,10 +28,10 @@
             <div class="col-sm-2 p-0">
                 <div class="soc-container">
                     <div class="soc-links">
-                        <a href=""><img src="../assets/img/linkedin.png" alt=""></a>
-                        <a href=""><img src="../assets/img/linkedin.png" alt=""></a>
-                        <a href=""><img src="../assets/img/twitter.png" alt=""></a>
-                        <a href=""><img src="../assets/img/youtube.png" alt=""></a>
+                        <a href=""><img src="../assets/img/linkedin.svg" alt=""></a>
+                        <a href=""><img src="../assets/img/facebook.svg" alt=""></a>
+                        <a href=""><img src="../assets/img/twitter.svg" alt=""></a>
+                        <a href=""><img src="../assets/img/youtube.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -141,8 +141,7 @@ export default {
 
             img {
                 object-fit: cover;
-                width: 75%;
-                border: 2px solid $lightcolor;
+                width: 65%;
                 padding: 5px;
             }
         }

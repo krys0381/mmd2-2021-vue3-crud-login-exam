@@ -34,11 +34,15 @@ export default {
 .conclusion-row {
     width: 100%;
     height: 100%;
-    background: $lightcolor 0% 0% no-repeat padding-box;
+    background-image: url("../../assets/img/collab_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
 
     #conclusion-container {
         width: 100%;
         height: 100%;
+        padding: 75px 0;
 
         .conclusion-text-container {
             display: flex;

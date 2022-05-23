@@ -101,11 +101,15 @@ export default {
 .homepage-row {
     width: 100%;
     height: 100%;
-    background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
-
+    // background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
+    background-image: url("../assets/img/hero_homepage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     #homepage-container {
         width: 100%;
         height: 100%;
+        padding: 50px 0 300px 0;
 
         .hero-container {
             display: flex;
@@ -136,9 +140,9 @@ export default {
 
             #link-btns {
                 width: 70%;
-                height: 100%;
-                margin-top: 10px;
+                margin-top: 250px;
                 display: flex;
+                position: absolute;
 
                 .link-btn {
                     background: #7E42BE 0% 0% no-repeat padding-box;
@@ -155,8 +159,6 @@ export default {
                         justify-content: start;
 
                         #link-btn-text-small {
-                            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-poppins);
-                            letter-spacing: var(--unnamed-character-spacing-0);
                             text-align: left;
                             font: normal normal normal 12px Poppins;
                             letter-spacing: 0px;
@@ -165,8 +167,6 @@ export default {
                         }
 
                         #link-btn-text-big {
-                            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 40px/60px var(--unnamed-font-family-poppins);
-                            letter-spacing: var(--unnamed-character-spacing-0);
                             text-align: left;
                             font: normal normal normal 35px Poppins;
                             letter-spacing: 0px;

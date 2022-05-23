@@ -67,7 +67,7 @@ export default {
     height: 100%;
     background: $lightcolor 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding: 30px 0;
+    padding: 80px 0;
 }
 
 .ourservices-container {

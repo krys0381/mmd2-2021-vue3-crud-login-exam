@@ -13,18 +13,7 @@
           <td>{{ name }}</td>
           <td>{{ task }}</td>
           <td>
-            <!-- manually type action buttons -->
-            <!-- :to will redirect the user to the edit URL with the id set to the project we are iterating -->
-            <router-link :to="`/edit/${id}`">
-              <button class="btn btn-primary btn-sm me-2">
-                Edit
-              </button>
-            </router-link>
-            <!-- use deleteProject and pass the id -->
-            <button class="btn btn-danger btn-sm" @click="deleteEvent(id)">
-              Delete
-            </button>
-             <!--  -->
+            Empty
           </td>
         </tr>
       </tbody>
@@ -34,13 +23,13 @@
 
 <script>
 // useload hook + delete import 
-import { useLoadEvents, deleteEvent  } from '@/firebase.js'
+import { useLoadEvents } from '../../firebase.js'
 
   export default {
     setup() {
       const events = useLoadEvents()
 
-      return { events, deleteEvent }
+      return { events }
     } 
   }
 </script>
