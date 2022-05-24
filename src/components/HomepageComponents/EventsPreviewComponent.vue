@@ -82,8 +82,9 @@ import { useLoadEvents } from '../../firebase.js'
 export default {
   setup() {
     const events = useLoadEvents()
+
     return { events }
-  } 
+  }
 }
 </script>
 

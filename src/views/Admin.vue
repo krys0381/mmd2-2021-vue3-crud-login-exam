@@ -1,5 +1,5 @@
 <template>
-  <div class="about"> 
+  <div class="admin"> 
     <Header />
     <h1>This is an admin page</h1>
     <h1>Welcome {{ name }}</h1>
@@ -7,8 +7,16 @@
       Logout
     </button>
 
+    <h1>Events</h1>
+
     <EventCreate />
     <EventList />
+
+    <h1>Testimonials</h1>
+
+    <TestimonialCreate />
+    <TestimonialList />
+
     <Footer />
   </div>
 </template>
@@ -25,6 +33,9 @@ import { /*useRoute,*/ useRouter } from 'vue-router'
 import EventCreate from '@/components/EventsComponents/EventCreate.vue'
 import EventList from '@/components/EventsComponents/EventList.vue'
 
+import TestimonialCreate from '@/components/HomepageComponents/TestimonialsComponents/TestimonialCreate.vue'
+import TestimonialList from '@/components/HomepageComponents/TestimonialsComponents/TestimonialList.vue'
+
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -34,6 +45,8 @@ export default {
     Header,
     EventCreate,
     EventList,
+    TestimonialCreate,
+    TestimonialList,
     Footer
 
   },

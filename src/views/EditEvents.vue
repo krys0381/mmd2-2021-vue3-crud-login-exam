@@ -1,6 +1,6 @@
 <template>
   <div class="card card-body mt-4">
-    <h3>Edit users</h3>
+    <h3>Edit Events</h3>
     <form @submit.prevent="update">
       
       <div class="form-group">

@@ -25,7 +25,10 @@
             <div class="col-12 p-0">
                 <div class="testimonials-container">
 
-                    <div class="item-container active">
+                    <div 
+                    class="item-container"
+                    v-for="{ id, quote, author, company } in testimonials" :key="id"
+                    >
                         <div class="item1">
                             <div class="quote-left-container">
                                 <div class="quote-left">
@@ -33,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="quote-text">
-                                I owe the community a BIG thank you as the first event really kick-started my own business with a lot of contacts and positive inspiration. Have been really busy since we met at the Inspirational Talk #1.
+                                {{ quote }}
                             </div>
                             <div class="quote-right-container">
                                 <div class="quote-right">
@@ -42,30 +45,8 @@
                             </div>
                         </div>
                         <div class="item2">
-                            <div class="quote-author">Thomas Andersen</div>
-                            <div class="quote-company">Founder / CEO of BitMind</div>
-                        </div>
-                    </div>
-
-                    <div class="item-container">
-                        <div class="item1">
-                            <div class="quote-left-container">
-                                <div class="quote-left">
-                                    <img src="../../../assets/img/quote-left.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="quote-text">
-                                I owe the community a BIG thank you as the first event really kick-started my own business with a lot of contacts and positive inspiration. Have been really busy since we met at the Inspirational Talk #1.
-                            </div>
-                            <div class="quote-right-container">
-                                <div class="quote-right">
-                                    <img src="../../../assets/img/quote-right.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item2">
-                            <div class="quote-author">Thomas Andersen</div>
-                            <div class="quote-company">Founder / CEO of BitMind</div>
+                            <div class="quote-author">{{ author }}</div>
+                            <div class="quote-company">{{ company }}</div>
                         </div>
                     </div>
 
@@ -77,8 +58,13 @@
 </template>
 
 <script>
+import { useLoadTestimonials } from '../../../firebase.js'
+
 export default {
-    
+  setup() {
+    const testimonials = useLoadTestimonials()
+    return { testimonials }
+  }
 }
 </script>
 

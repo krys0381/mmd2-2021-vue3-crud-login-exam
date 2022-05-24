@@ -3,7 +3,8 @@ import Events from '../views/EventsView.vue'
 import Homepage from '../views/HomepageView.vue'
 
 // for editing (CRUD)
-import Edit from '../views/Edit.vue'
+import EditEvents from '../views/EditEvents.vue'
+import EditTestimonials from '../views/EditTestimonials.vue'
 
 // For login stuff
 import Login from '../views/Login.vue'
@@ -25,9 +26,14 @@ const routes = [
     component: Events
   },
   {
-    path: '/edit/:id',  // id parameter to know which project we clicked
-    name: 'Edit',
-    component: Edit
+    path: '/editEvents/:id',  // id parameter to know which project we clicked
+    name: 'EditEvents',
+    component: EditEvents
+  },
+  {
+    path: '/editTestimonials/:id',  // id parameter to know which project we clicked
+    name: 'EditTestimonials',
+    component: EditTestimonials
   },
   {
     path: '/login',

@@ -14,6 +14,7 @@ const firebaseApp = firebase.initializeApp(config)
 
 const db = firebaseApp.firestore()   // 1:  saving into a const variable
 const eventCollection = db.collection('events') // 1:  grab the collection from firestore
+const testimonialCollection = db.collection('testimonials')
 
 // 2 : Make our CRUD functions and exporting them for use in other components
 
@@ -21,6 +22,10 @@ const eventCollection = db.collection('events') // 1:  grab the collection from 
 // Add a project to the project collection
 export const createEvent = event => {
   return eventCollection.add(event)
+}
+
+export const createTestimonial = testimonial => {
+  return testimonialCollection.add(testimonial)
 }
 
 // accept project id and return the documentation if it exist in the project collection
@@ -31,14 +36,27 @@ export const getEvent = async id => {
   // Link: https://firebase.google.com/docs/reference/js/firebase.database.DataSnapshot#exists
 }
 
+export const getTestimonial = async id => {
+  const testimonial = await testimonialCollection.doc(id).get()
+  return testimonial.exists ? testimonial.data() : null
+}
+
 // accepts project + id (through the v-for) and updates the correct project based in id
 export const updateEvent = (id, event) => {
   return eventCollection.doc(id).update(event)
 }
 
+export const updateTestimonial = (id, testimonial) => {
+  return testimonialCollection.doc(id).update(testimonial)
+}
+
 // accepts id => deletes
 export const deleteEvent = id => {
   return eventCollection.doc(id).delete()
+}
+
+export const deleteTestimonial = id => {
+  return testimonialCollection.doc(id).delete()
 }
 
 // composition hook, that will return a ref to an array of projects from the database
@@ -54,8 +72,21 @@ export const useLoadEvents = () => {
       ...doc.data()
     }))
   })
+
   // Creating this listener, will return us a clean-up function(onUnmounted, 
   // which we will call on the onUnmounted lifecycle(test with onUpdate)
   onUnmounted(close)
   return events
+}
+
+export const useLoadTestimonials = () => {
+  const testimonials = ref([])
+  const close = testimonialCollection.onSnapshot(snapshot => {
+    testimonials.value = snapshot.docs.map(doc => ({
+      id: doc.id, 
+      ...doc.data()
+    }))
+  })
+  onUnmounted(close)
+  return testimonials
 }
