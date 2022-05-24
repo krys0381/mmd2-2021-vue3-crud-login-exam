@@ -3,15 +3,20 @@
     <table class="table m-0">
       <thead>
         <tr>
+          <th scope="col">Date</th>
           <th scope="col">Name</th>
-          <th scope="col">Task</th>
-          <th scope="col">Action</th>
+          <th scope="col">Description</th>
+          <th scope="col">Location</th>
+          <th scope="col">Time</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="{ id, name, task } in events" :key="id">
+        <tr v-for="{ id, date, name, description, location, time } in events" :key="id">
+          <td>{{ date }}</td>
           <td>{{ name }}</td>
-          <td>{{ task }}</td>
+          <td>{{ description }}</td>
+          <td>{{ location }}</td>
+          <td>{{ time }}</td>
           <td>
             <!-- manually type action buttons -->
             <!-- :to will redirect the user to the edit URL with the id set to the project we are iterating -->

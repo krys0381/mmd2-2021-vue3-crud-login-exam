@@ -68,7 +68,7 @@ import IntroductionComponent from '../components/HomepageComponents/Introduction
 import OurServicesComponent from '../components/HomepageComponents/OurServicesComponent.vue'
 import EventsPreviewComponent from '../components/HomepageComponents/EventsPreviewComponent.vue'
 import OurPartnersComponent from '../components/HomepageComponents/OurPartnersComponent.vue'
-import TestimonialsComponent from '../components/HomepageComponents/TestimonialsComponent.vue'
+import TestimonialsComponent from '../components/HomepageComponents/TestimonialsComponents/TestimonialsComponent.vue'
 import FollowUsComponent from '../components/HomepageComponents/FollowUsComponent.vue'
 import NewsletterComponent from '../components/HomepageComponents/NewsletterComponent.vue'
 import ConclusionComponent from '../components/HomepageComponents/ConclusionComponent.vue'

@@ -20,18 +20,21 @@
                     </div>
                     <div class="eventspreview-text-container"><h2>THE EVENTS</h2></div>
 
-                    <div class="eventspreview-list-container">
+                    <div 
+                    class="eventspreview-list-container" 
+                    v-for="{ id, date, name, location } in events" :key="id"
+                    >
                         <div class="eventspreview-list-item">
                             <div class="eventspreview-list-text">
-                                <h5>Tech and Tequila Kickstart, Esbjerg, DK</h5>
-                                <p>Guest speaker Ronnie Baslund</p>
+                                <h5>{{ name }}</h5>
+                                <p>{{ location }}</p>
                             </div>
 
                             <div class="eventspreview-list-date">
-                                <div class="date">19 MAY</div>
+                                <div class="date">{{ date }}</div>
                             </div>
                         </div>
-                        <div class="eventspreview-list-item">
+                        <!-- <div class="eventspreview-list-item">
                             <div class="eventspreview-list-text">
                                 <h5>Quam etiam tincidunt</h5>
                                 <p>Vestibulum metus</p>
@@ -60,7 +63,7 @@
                             <div class="eventspreview-list-date">
                                 <div class="date">30 AUG</div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="eventspreview-text-container">
@@ -74,8 +77,13 @@
 </template>
 
 <script>
+import { useLoadEvents } from '../../firebase.js'
+
 export default {
-    
+  setup() {
+    const events = useLoadEvents()
+    return { events }
+  } 
 }
 </script>
 

@@ -1,24 +1,25 @@
 <template>
   <div class="card card-body mt-4">
     <!-- using @submit as a click function - add prevent to stop from refreshing page -->
-    <form @submit.prevent="onSubmit">    
+    <form @submit.prevent="onSubmit">
+          
       <div class="form-group">
+        <label>Date</label>
+        <input 
+          type="text"
+          class="form-control"
+          v-model="form.date"
+          required
+        />
+      </div>
+      
+      <div class="form-group mt-3">
         <label>Name</label>
         <input 
           type="text" 
           v-model="form.name" 
           class="form-control" 
           required 
-        />
-      </div>
-
-      <div class="form-group mt-3">
-        <label>Subname</label>
-        <input 
-          type="text"
-          class="form-control"
-          v-model="form.subname"
-          required
         />
       </div>
 
@@ -43,11 +44,11 @@
       </div>
 
       <div class="form-group mt-3">
-        <label>Date</label>
+        <label>Time</label>
         <input 
           type="text"
           class="form-control"
-          v-model="form.date"
+          v-model="form.time"
           required
         />
       </div>
@@ -66,22 +67,22 @@ import { createEvent } from '../../firebase.js' // maybe this make error
   export default {
    setup() {
      const form = reactive({
+       date: '',
        name: '',
-       subname: '',
        description: '',
        location: '',
-       date: ''
+       time: ''
      })
 
      const onSubmit = async () => {
        // spread operator to add field + invoking our createProject function from firebase.js
        await createEvent({ ...form }) 
        // after create - empty input field
+       form.date = ''
        form.name = ''
-       form.subname = ''
        form.description = ''
        form.location = ''
-       form.date = ''
+       form.time = ''
      }
 
      return { form, onSubmit }
