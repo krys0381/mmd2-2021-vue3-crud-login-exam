@@ -156,7 +156,7 @@ export default {
 
                     .link-btn-text {
                         width: 100%;
-                        justify-content: start;
+                        justify-content: flex-start;
 
                         #link-btn-text-small {
                             text-align: left;
@@ -178,7 +178,7 @@ export default {
                     .link-btn-arrow {
                         width: 100%;
                         display: flex;
-                        justify-content: end;
+                        justify-content: flex-end;
                         img {
                             width: 15%;
                             height: 100%;

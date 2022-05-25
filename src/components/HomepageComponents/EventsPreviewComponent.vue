@@ -34,36 +34,6 @@
                                 <div class="date">{{ date }}</div>
                             </div>
                         </div>
-                        <!-- <div class="eventspreview-list-item">
-                            <div class="eventspreview-list-text">
-                                <h5>Quam etiam tincidunt</h5>
-                                <p>Vestibulum metus</p>
-                            </div>
-
-                            <div class="eventspreview-list-date">
-                                <div class="date">04 JUN</div>
-                            </div>
-                        </div>
-                        <div class="eventspreview-list-item">
-                            <div class="eventspreview-list-text">
-                                <h5>Lacus nulla nisl</h5>
-                                <p>Tincidunt orci rhoncus</p>
-                            </div>
-
-                            <div class="eventspreview-list-date">
-                                <div class="date">21 JUL</div>
-                            </div>
-                        </div>
-                        <div id="last-child" class="eventspreview-list-item">
-                            <div class="eventspreview-list-text">
-                                <h5>Lacus nulla nisl</h5>
-                                <p>Tincidunt orci rhoncus</p>
-                            </div>
-
-                            <div class="eventspreview-list-date">
-                                <div class="date">30 AUG</div>
-                            </div>
-                        </div> -->
                     </div>
 
                     <div class="eventspreview-text-container">

@@ -108,11 +108,13 @@ export default {
         }
     }
 
+    // Quotes
+
     .item-container {
-    width: 60%;
-    background: #10041C 0% 0% no-repeat padding-box;
-    padding: 50px 0;
-    margin: 50px 0;
+        width: 60%;
+        background: #10041C 0% 0% no-repeat padding-box;
+        padding: 50px 0;
+        margin: 50px 0;
 
         .item1 {
             width: 100%;
@@ -146,7 +148,7 @@ export default {
                 width: 25%;
                 display: flex;
                 justify-content: center;
-                align-items: end;
+                align-items: flex-end;
 
                 .quote-right {
                     width: 35%;
@@ -185,10 +187,7 @@ export default {
     }
 }  
 
-// Quote
-
-
-
+// Extra
 
 #extra {
     width: 100%;

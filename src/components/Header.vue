@@ -2,32 +2,35 @@
     <div class="header">
         <div class="header-row row g-0">
             
-            <div class="col-sm-1 p-0"></div>
-            <div class="col-6 col-sm-4 p-0">
-                <div class="logo-links-container">
-                    <div id="logo-box"><img src="../assets/img/logo.svg" alt=""></div>
-            
-                    <div class="links-box"><a href="">START-UPS</a></div>
-                    <div class="links-box"><a href="https://techhubinvest.com/">INVESTORS</a></div>
+            <div class="col-6 p-0">
+                <div class="extra">
+                    <div class="logo-links-container">
+                        <div id="logo-box"><img src="../assets/img/logo.png" alt=""></div>
+
+                        <div class="links-box"><a href="">START-UPS</a></div>
+                        <div class="links-box"><a href="https://techhubinvest.com/">INVESTORS</a></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-5 p-0">
-                <div class="navigation">
-                    <div class="nav">  
-                        <router-link to="/">Homepage</router-link> |
-                        <router-link to="/events">Events</router-link> |
-                        <router-link to="/admin">Admin</router-link>
+            <div class="col-6 p-0">
+                <div class="extra">
+                    <div id="nav-container">
+                        <div class="navigation">
+                            <div class="nav">  
+                                <router-link to="/">Homepage</router-link> |
+                                <router-link to="/events">Events</router-link> |
+                                <router-link to="/admin">Admin</router-link>
+                            </div>
+                        </div>
+                        <router-view/>
+
+                        <div id="btn-box">
+                            <button type="button" class="btn btn-primary btn-lg">LET'S TALK</button>
+                        </div>
                     </div>
                 </div>
-                <router-view/>
             </div>
-            <div class="col-sm-1 p-0">
-                <div id="btn-box">
-                    <button type="button" class="btn btn-primary btn-lg">LET'S TALK</button>
-                </div>
-            </div>
-            <div class="col-sm-1 p-0"></div>
         </div>
     </div>
 </template>
@@ -49,17 +52,19 @@ export default {
 
 .logo-links-container {
     display: flex;
-    justify-content: start;
-    width: 100%;
+    justify-content: flex-start;
+    width: 85%;
 
     // Logo
 
     #logo-box {
       display: flex;
-      align-items: center;  
+      align-items: center;
+      width: 35%;
+      
       img {
-          object-fit: cover;
-          height: 65px;
+        width: 100%;
+        object-fit: cover;
       }
     }
 
@@ -85,41 +90,56 @@ export default {
     }
 }
 
-// Navigation 
-
-.navigation {
-    width: 100%;
-    height: 100%;
+#nav-container {
+    width: 85%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0 20px 0 0;
 
-    a {
-        font-weight: 500;
-        color: $backgroundcolor;
+    // Navigation
 
-        &.router-link-exact-active {
-          color: $accentlightcolor;
+    .navigation {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px 0 0;
+
+        a {
+            font-weight: 500;
+            color: $backgroundcolor;
+
+            &.router-link-exact-active {
+              color: $accentlightcolor;
+            }
+        }
+    }
+
+    // Buttons
+
+    #btn-box {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .btn {
+            border: 1px solid $lightcolor;
+            opacity: 1;
+            border-radius: 0;
+            opacity: 1;
+            background-color: $basecolor;
         }
     }
 }
 
-// Button
+// Extra
 
-#btn-box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    .btn {
-        border: 1px solid $lightcolor;
-        opacity: 1;
-        border-radius: 0;
-        opacity: 1;
-        font-size: 18px;
-        background-color: $basecolor;
-    }
+.extra {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 </style>
