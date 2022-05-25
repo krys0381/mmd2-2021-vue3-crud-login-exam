@@ -1,0 +1,258 @@
+<template>
+  <div class="events-component">
+    <div class="events-row row g-0">
+
+      <div class="col-12 col-sm-6 p-0">
+        <div class="events-container">
+          <div class="events-text-container">
+            <div id="line"></div>
+            <h4>WHAT EVENTS TO EXPECT</h4>
+          </div>
+          <div class="events-container"><h2>UPCOMING EVENTS</h2></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 p-0"></div>
+
+      <div class="col-12 p-0">
+        <div id="extra">
+          <div 
+          class="eventslist-container"
+          v-for="{ id, date, name, description, location, time } in events" :key="id"
+          >
+
+            <div class="event-img">
+              <img src="../../assets/img/eventspreview.jpeg" alt="">
+            </div>
+
+            <div class="event-description-container">
+              <div class="event-description">
+                <div id="event-date">{{ date }}</div>
+              </div>
+
+              <div class="event-description">
+                <h5>{{ name }}</h5>
+              </div>
+
+              <div class="event-description">
+                <p>{{ description }}</p>
+              </div>
+
+              <div class="event-description">
+                <div class="event-location-time">
+                  <div class="location-time-img">
+                    <img src="../../assets/img/location.svg" alt="">
+                  </div>
+                  <p>{{ location }}</p>
+                </div>
+
+                <div class="event-location-time">
+                  <div class="location-time-img">
+                    <img src="../../assets/img/clock.svg" alt="">
+                  </div>
+                  <p>{{ time }}</p>
+                </div>
+              </div>
+
+              <div class="event-description">
+                <div class="event-btn-ticket">
+                  <button type="button" class="btn btn-primary btn-lg"><h6>GET TICKET</h6></button>
+                </div>
+
+                <div class="event-btn-details">
+                  <button type="button" class="btn btn-primary btn-lg"><h6>VIEW DETAILS</h6></button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- <div class="card mt-4">
+    <table class="table m-0">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Location</th>
+          <th scope="col">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="{ id, date, name, description, location, time } in events" :key="id">
+          <td>{{ date }}</td>
+          <td>{{ name }}</td>
+          <td>{{ description }}</td>
+          <td>{{ location }}</td>
+          <td>{{ time }}</td>
+        </tr>
+      </tbody>
+    </table>
+   
+  </div> -->
+</template>
+
+<script>
+// useload hook + delete import 
+import { useLoadEvents } from '../../firebase.js'
+
+export default {
+  setup() {
+    const events = useLoadEvents()
+
+    return { events }
+  } 
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../../assets/shared.scss";
+@include dark-heading2;
+@include dark-heading4;
+@include light-heading5;
+@include heading6;
+@include light-paragraph1;
+
+.events-row {
+  width: 100%;
+  background: $backgroundcolor 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 80px 0;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  // Text
+  .events-text-container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 20px 0;
+
+    #line {
+      height: 0;
+      width: 80px;
+      background-color: $shadecolor;
+      border: 1.5px solid $shadecolor;
+      opacity: 1;
+      margin-right: 20px;
+    }
+  }
+}
+
+// Events List
+
+.eventslist-container {
+  width: 75%;
+  background: $basecolor 0% 0% no-repeat padding-box;
+  border: 1px solid $basecolor;
+  opacity: 1;
+  display: flex;
+  margin: 50px 0;
+
+  .event-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // Description
+
+  .event-description-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+    .event-description {
+      width: 85%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+        #event-date {
+          font: normal normal bold 80px Poppins;
+          letter-spacing: 0px;
+          color: $backgroundcolor;
+          opacity: 1;
+        }
+
+      .event-location-time {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0;
+
+        .location-time-img {
+          width: 10%;
+          margin-right: 15px;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .event-btn-ticket {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 10px;
+
+      .btn {
+        background-color: #E69B5A;
+        border-radius: 0;
+        border-color: #E69B5A;
+        padding: 10px;
+      }
+    }
+
+    .event-btn-details {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10px;
+
+      .btn {
+        border: 1px solid $lightcolor;
+        opacity: 1;
+        border-radius: 0;
+        opacity: 1;
+        background-color: $basecolor;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+// Extra
+
+#extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+</style>

@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    <EventListUsers />
+    <EventsCalendar />
     <Footer />
   </div>
 </template>
@@ -75,14 +75,14 @@
 // Stuff for CRUD
 
 import Header from '../components/Header.vue'
-import EventListUsers from '@/components/EventsComponents/EventListUsers.vue'
+import EventsCalendar from '@/components/EventsComponents/EventsCalendarComponent.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'EventsView',
   components: {
     Header,
-    EventListUsers,
+    EventsCalendar,
     Footer
   }
 }
@@ -201,10 +201,10 @@ export default {
   flex-direction: column;
 
   #hero-picture {
-    width: 100%;
+    width: 85%;
 
     img {
-      width: 90%;
+      width: 100%;
       object-fit: cover;
     }
   }

@@ -111,10 +111,10 @@ export default {
     // Quotes
 
     .item-container {
-    width: 60%;
-    background: #10041C 0% 0% no-repeat padding-box;
-    padding: 50px 0;
-    margin: 50px 0;
+        width: 60%;
+        background: #10041C 0% 0% no-repeat padding-box;
+        padding: 50px 0;
+        margin: 50px 0;
 
         .item1 {
             width: 100%;

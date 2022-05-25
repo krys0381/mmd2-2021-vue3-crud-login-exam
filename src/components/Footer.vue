@@ -5,9 +5,7 @@
             <div class="col-sm-1 p-0"></div>
             <div class="col-6 col-sm-2 p-0">
                 <div class="logo-links-container">
-                    <div id="logo-box"><img src="../assets/img/logo.svg" alt=""></div>
-            
-                    <div class="links-box"><a href="">TECHHUH SYD</a></div>
+                    <div id="logo-box"><img src="../assets/img/logo.png" alt=""></div>
                 </div>
             </div>
 
@@ -71,10 +69,12 @@ export default {
 
     #logo-box {
       display: flex;
-      align-items: center;  
+      align-items: center;
+      width: 100%;
+      
       img {
-          object-fit: cover;
-          height: 65px;
+        width: 100%;
+        object-fit: cover;
       }
     }
 
