@@ -64,7 +64,7 @@ export default {
 
 .logo-links-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
 
     // Logo
@@ -124,7 +124,7 @@ export default {
 
 .soc-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100%;

@@ -20,6 +20,7 @@
         </tr>
       </tbody>
     </table>
+   
   </div>
 </template>
 
@@ -30,6 +31,7 @@ import { useLoadEvents } from '../../firebase.js'
 export default {
   setup() {
     const events = useLoadEvents()
+
     return { events }
   } 
 }
