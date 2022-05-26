@@ -66,7 +66,8 @@
         </div>
       </div>
     </div>
-    <EventsCalendar />
+    <EventsCalendarComponent />
+    <EventVideosComponent />
     <Footer />
   </div>
 </template>
@@ -75,14 +76,16 @@
 // Stuff for CRUD
 
 import Header from '../components/Header.vue'
-import EventsCalendar from '@/components/EventsComponents/EventsCalendarComponent.vue'
+import EventsCalendarComponent from '@/components/EventsComponents/EventsCalendarComponent.vue'
+import EventVideosComponent from '@/components/EventsComponents/EventVideosComponent.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'EventsView',
   components: {
     Header,
-    EventsCalendar,
+    EventsCalendarComponent,
+    EventVideosComponent,
     Footer
   }
 }

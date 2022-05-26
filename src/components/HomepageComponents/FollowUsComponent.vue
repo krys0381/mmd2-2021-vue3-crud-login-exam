@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 p-0"></div>
+            <div class="col-sm-6 p-0"></div>
 
             <div class="col-12 p-0">
                 <div class="followus-container">
