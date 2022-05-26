@@ -1,11 +1,11 @@
 <template>
-  <div class="ourhistory-container container-fluid">
+  <div class="ourhistory-container container-fluid overflow-hidden">
     <div class="container">
       <div class="row d-flex justify-content-between">
-        <div class="history-image col-lg-6 pb-5">
+        <div class="history-image col-lg-6 col-sm-12 col-12 mb-5">
 
         </div>
-        <div class="history-text-container col-lg-5">
+        <div class="history-text-container col-lg-5 col-sm-12 col-12">
           <div class="history-text-subtitle d-flex align-items-center">
               <div class="subtitle-line"></div>
               <h4>HOW IT ALL STARTED</h4>
@@ -50,9 +50,9 @@
   height: 740px;
 }
 
-.history-text-container{
-  height: 740px;
-}
+// .history-text-container{
+//   height: 740px;
+// }
 
 .row{
    padding: 80px 0;

@@ -7,17 +7,17 @@
               <h4>WHERE WE WORK</h4>
         </div>
         <div class="geo-text-container d-flex align-items-start my-2 flex-wrap">
-           <h2 class="col-lg-6">
+           <h2 class="col-xl-6 col-sm-12 col-12 overflow-hidden flex-wrap">
               GEOGRAPHICAL <br>
               REACH
             </h2>
-            <p class="geo-text-p col-lg-6">
+            <p class="geo-text-p col-xl-6 col-sm-12 col-12">
               Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, 
               <br><br>
               Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, 
             </p>
         </div>
-        <div class="geo-image my-5 d-flex justify-content-center">
+        <div class="geo-image my-5 d-flex justify-content-center col-lg-6 col sm-12 col-12">
           <!-- <img src="../../assets/img/geo.jpg" width="1363" height="656" alt=""> -->
         </div>
       </div>
@@ -59,7 +59,7 @@
 }
 
 .geo-image{
-  width: 60vw;
+  width: 100%;
   background-image: url('../../assets/img/geo.jpg');
   height: 656px;
   background-size: cover;
