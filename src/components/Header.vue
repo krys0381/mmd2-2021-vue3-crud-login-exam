@@ -5,10 +5,12 @@
             <div class="col-6 p-0">
                 <div class="extra">
                     <div class="logo-links-container">
-                        <div id="logo-box"><img src="../assets/img/logo.png" alt=""></div>
+                        <div id="logo-box"><a href="/"><img src="../assets/img/logo.png" alt=""></a></div>
 
-                        <div class="links-box"><a href="">START-UPS</a></div>
-                        <div class="links-box"><a href="https://techhubinvest.com/">INVESTORS</a></div>
+                        <div id="links-box-container">
+                            <div class="links-box"><a href="">START-UPS</a></div>
+                            <div class="links-box"><a href="https://techhubinvest.com/">INVESTORS</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -18,9 +20,9 @@
                     <div id="nav-container">
                         <div class="navigation">
                             <div class="nav">  
-                                <router-link to="/">Homepage</router-link> |
-                                <router-link to="/events">Events</router-link> |
-                                <router-link to="/admin">Admin</router-link>
+                                <router-link to="/about">ABOUT</router-link>
+                                <router-link to="/events">EVENTS</router-link>
+                                <router-link to="/admin">ADMIN</router-link>
                             </div>
                         </div>
                         <router-view/>
@@ -60,7 +62,7 @@ export default {
     #logo-box {
       display: flex;
       align-items: center;
-      width: 35%;
+      width: 45%;
       
       img {
         width: 100%;
@@ -70,24 +72,31 @@ export default {
 
     // Links
 
-    .links-box {
+    #links-box-container {
         display: flex;
         align-items: center;
-        margin: 0 10px;
+        margin-left: 30px;
 
-        a {
-            text-align: center;
-            text-decoration: none;
-            font: normal normal 500 18px/27px Poppins;
-            letter-spacing: 0px;
-            color: $backgroundcolor;
-            opacity: 1;
 
-            &:hover {
-                color: $accentlightcolor;
+        .links-box {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                font: normal normal 500 18px/27px Poppins;
+                letter-spacing: 0px;
+                color: $backgroundcolor;
+                opacity: 1;
+
+                &:hover {
+                    color: $accentlightcolor;
+                }
             }
         }
-    }
+    } 
 }
 
 #nav-container {
@@ -105,11 +114,18 @@ export default {
         padding: 0 20px 0 0;
 
         a {
-            font-weight: 500;
             color: $backgroundcolor;
+            text-decoration: none;
+            font: normal normal 500 18px/27px Poppins;
+            letter-spacing: 0px;
+            margin: 0 15px;
+
+            &:hover {
+                color: $accentlightcolor;
+            }
 
             &.router-link-exact-active {
-              color: $accentlightcolor;
+              border-bottom: 2px solid $lightcolor;
             }
         }
     }

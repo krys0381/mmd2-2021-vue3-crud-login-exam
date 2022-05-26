@@ -22,7 +22,7 @@
           >
 
             <div class="event-img">
-              <img src="../../assets/img/eventspreview.jpeg" alt="">
+              <img src="../../assets/img/eventspreview.jpg" alt="">
             </div>
 
             <div class="event-description-container">

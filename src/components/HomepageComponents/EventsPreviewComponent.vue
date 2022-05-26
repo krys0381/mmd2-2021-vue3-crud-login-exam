@@ -6,7 +6,7 @@
                 <div id="extra">
                     <div class="eventspreview-container">
                         <div id="eventspreview-picture">
-                            <img src="../../assets/img/eventspreview.jpeg" alt="">
+                            <img src="../../assets/img/eventspreview.jpg" alt="">
                         </div>
                     </div>
                 </div>

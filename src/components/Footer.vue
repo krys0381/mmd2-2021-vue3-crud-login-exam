@@ -1,39 +1,40 @@
 <template>
     <div class="footer">
         <div class="footer-row row g-0">
-            
-            <div class="col-sm-1 p-0"></div>
-            <div class="col-6 col-sm-2 p-0">
-                <div class="logo-links-container">
-                    <div id="logo-box"><img src="../assets/img/logo.png" alt=""></div>
+
+            <div class="col-6 col-sm-3 p-0">
+                <div class="extra">
+                    <div class="logo-links-container">
+                        <div id="logo-box"><a href="/"><img src="../assets/img/logo.png" alt=""></a></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-6 col-sm-6 p-0">
+            <div class="col-sm-6 p-0">
                 <div class="navigation">
                     <div class="nav">  
-                        <router-link to="/">Homepage</router-link> |
-                        <router-link to="/">About</router-link> |
-                        <router-link to="/events">Events</router-link> |
-                        <router-link to="/">Contact</router-link> |
-                        <router-link to="/">Start-ups</router-link> |
-                        <a href="https://techhubinvest.com/">Investors</a> |
-                        <router-link to="/admin">Admin</router-link>
+                        <router-link to="/about">About</router-link> 
+                        <router-link to="/events">Events</router-link> 
+                        <router-link to="">Contact</router-link> 
+                        <router-link to="">FAQ</router-link> 
+                        <router-link to="">Start-ups</router-link>
+                        <a href="https://techhubinvest.com/">Investors</a>
                     </div>
                 </div>
                 <router-view/>
             </div>
-            <div class="col-sm-2 p-0">
-                <div class="soc-container">
-                    <div class="soc-links">
-                        <a href=""><img src="../assets/img/linkedin.svg" alt=""></a>
-                        <a href=""><img src="../assets/img/facebook.svg" alt=""></a>
-                        <a href=""><img src="../assets/img/twitter.svg" alt=""></a>
-                        <a href=""><img src="../assets/img/youtube.svg" alt=""></a>
+            <div class="col-sm-3 p-0">
+                <div class="extra">
+                    <div class="soc-container">
+                        <div class="soc-links">
+                            <a href=""><img src="../assets/img/linkedin.svg" alt=""></a>
+                            <a href=""><img src="../assets/img/facebook.svg" alt=""></a>
+                            <a href=""><img src="../assets/img/twitter.svg" alt=""></a>
+                            <a href=""><img src="../assets/img/youtube.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1 p-0"></div>
 
             <div class="col-12 p-0">
                 <div id="rights-container">
@@ -63,39 +64,18 @@ export default {
 .logo-links-container {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: 85%;
 
     // Logo
 
     #logo-box {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    // Links
-
-    .links-box {
         display: flex;
         align-items: center;
-        margin: 0 10px;
+        width: 75%;
 
-        a {
-            text-align: center;
-            text-decoration: none;
-            font: normal normal 500 18px/27px Poppins;
-            letter-spacing: 0px;
-            color: $backgroundcolor;
-            opacity: 1;
-
-            &:hover {
-                color: $accentlightcolor;
-            }
+        img {
+          width: 100%;
+          object-fit: cover;
         }
     }
 }
@@ -108,14 +88,20 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 0 0;
 
     a {
-        font-weight: 500;
         color: $backgroundcolor;
+        text-decoration: none;
+        font: normal normal 500 18px/27px Poppins;
+        letter-spacing: 0px;
+        margin: 0 15px;
+
+        &:hover {
+            color: $accentlightcolor;
+        }
 
         &.router-link-exact-active {
-          color: $accentlightcolor;
+            border-bottom: 2px solid $lightcolor;
         }
     }
 }
@@ -126,12 +112,11 @@ export default {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 85%;
 
     .soc-links {
         display: flex;
-        width: 100%;
+        width: 75%;
 
         a {
             display: flex;
@@ -154,6 +139,16 @@ export default {
     align-items: center;
     width: 100%;
     margin-top: 20px;
+}
+
+// Extra 
+
+.extra {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 </style>

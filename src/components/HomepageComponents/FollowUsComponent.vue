@@ -17,10 +17,10 @@
             <div class="col-12 p-0">
                 <div class="followus-container">
                     <div class="followus-gallery-container">
-                        <div class="followus-gallery"><img src="../../assets/img/crowd-sportsman.jpeg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/diverse-business.jpeg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/female-speaker.jpeg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/male-speaker.jpeg" alt=""></div>
+                        <div class="followus-gallery"><img src="../../assets/img/crowd-sportsman.jpg" alt=""></div>
+                        <div class="followus-gallery"><img src="../../assets/img/diverse-business.jpg" alt=""></div>
+                        <div class="followus-gallery"><img src="../../assets/img/female-speaker.jpg" alt=""></div>
+                        <div class="followus-gallery"><img src="../../assets/img/male-speaker.jpg" alt=""></div>
                     </div>
                 </div>
             </div>

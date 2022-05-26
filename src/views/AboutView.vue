@@ -1,12 +1,12 @@
 <template>
   <div class="about">
-     <Header />
+    <Header />
     <AboutHeroComponent />
-     <OurHistoryComponent />
-     <TeamComponent />
-     <MissionVisionComponent />
-     <GeographicalComponent />
-      <Footer />
+    <OurHistoryComponent />
+    <TeamComponent />
+    <MissionVisionComponent />
+    <GeographicalComponent />
+    <Footer />
   </div>
 </template>
 

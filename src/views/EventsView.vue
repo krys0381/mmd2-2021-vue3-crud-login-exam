@@ -60,7 +60,7 @@
         <div id="extra">
           <div class="events-picture-container">
             <div id="hero-picture">
-              <img src="../assets/img/eventspreview.jpeg" alt="">
+              <img src="../assets/img/eventspreview.jpg" alt="">
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default {
   background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px 0 100px 0;
+  padding: 50px 0 120px 0;
 }
  
 .events-container {
