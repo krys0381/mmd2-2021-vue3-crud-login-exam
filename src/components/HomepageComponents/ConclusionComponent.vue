@@ -1,5 +1,5 @@
 <template>
-    <div class="conclusion-component container-fluid d-flex align-items-center">
+    <div class="conclusion-component container-fluid d-flex align-items-center justify-content-center overflow-hidden">
        
         <div class="container content-container d-flex align-items-center justify-content-center">
             <div class="row d-flex flex-column align-items-center justify-content-start">
@@ -7,19 +7,6 @@
                           <h1>Interested in collaboration?</h1>
                             <button type="button" class="btn btn-primary btn-lg col-lg-12 col-sm-12 col-12 mt-3">LET'S TALK</button>   
                 </div>
-                <!-- <div class="col-12 p-0">
-                <div id="conclusion-container">
-                    <div class="conclusion-text-container">
-                        <div id="conclusion-heading">
-                            <h1>Interested in collaboration?</h1>
-                        </div>
-
-                        <div id="conclusion-btn">
-                            <button type="button" class="btn btn-primary btn-lg"><h6>LET'S TALK</h6></button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             </div>
         </div>
          <div class="bg-image-container d-none d-xl-flex align-item-center justify-self-center">
@@ -40,7 +27,7 @@ export default {
 @include heading6;
 
 .collab-content-container{
-    z-index: 100;
+    z-index: 1;
 }
 
 .conclusion-component{
@@ -57,7 +44,7 @@ export default {
     height: 100%;
     position: absolute;
     // margin-top: -286px;
-    margin-left: -12px;
+    // margin-left: -12px;
     
 }
 

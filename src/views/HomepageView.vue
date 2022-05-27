@@ -1,30 +1,8 @@
 <template>
     <div class="homepage-out-container">
         <Header />
-        <div class="homepage-row container-fluid d-flex align-items-end justify-content-center overflow-hidden">
-            <div class="container d-flex align-items-center justify-content-center">
-                <div class="row" id="homepage-container" >
-                    <div class="hero-content-container d-flex flex-column align-items-center col-lg-12 col-sm-12 col-12  justify-content-center">
-                        <h1>Because starting up a tech business should be possible.</h1>
-                        <h3 class="col-lg-8">
-                            We are a community that connects, inspires and helps start-ups, students and investors build their tech business through networking events.
-                        </h3>
-                          <button type="button" class="btn btn-primary btn-lg 2 col-lg-4 col-md-12 col-sm-12 col-12 mt-5">JOIN OUR EVENT NOW!</button>
-                    </div>
-
-
-                    <!-- <div class="col-12 p-0"> -->
-                        <!-- <div id="homepage-container"> -->
-
-
-                        <!-- </div> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-            <div class="hero-image-container d-none d-xl-flex">
-
-            </div>
-        </div>
+          <HomeHeroComponent />
+      
         <div class="container-fluid "> 
             <div class="container ">
                 <div class="row d-flex align-items-center justify-content-center">
@@ -37,7 +15,7 @@
                                     <div class="link-btn-text-big mt-4">Start-ups</div>
                                 </div>
                                 <div class="link-btn-arrow">
-                                    <!-- <img src="../assets/img/angle-right-solid.svg" alt=""> -->
+                                   
                                 </div>
                             </a>
                             <a href="" class="link-btn d-flex align-items-center">
@@ -46,7 +24,7 @@
                                     <div class="link-btn-text-big mt-4">Investors</div>
                                 </div>
                                 <div class="link-btn-arrow">
-                                    <!-- <img src="../assets/img/angle-right-solid.svg" alt=""> -->
+                                   
                                 </div>
                             </a>
                         </div>
@@ -70,6 +48,7 @@
 
 <script>
 import Header from '../components/Header.vue'
+import HomeHeroComponent from '../components/HomepageComponents/HomeHeroComponent.vue'
 import IntroductionComponent from '../components/HomepageComponents/IntroductionComponent.vue'
 import OurServicesComponent from '../components/HomepageComponents/OurServicesComponent.vue'
 import EventsPreviewComponent from '../components/HomepageComponents/EventsPreviewComponent.vue'
@@ -85,6 +64,7 @@ export default {
 
   components:{
     Header,
+    HomeHeroComponent,
     IntroductionComponent,
     OurServicesComponent,
     EventsPreviewComponent,
@@ -116,11 +96,8 @@ a {
         background-size: cover;
         background-position: center;
         width: 100vw;
-        height: 70%;
-        // margin-left: -12px;
+        height: 60vh;
         position: absolute;
-        // margin-top: 200px;
-    //   margin-bottom: 100px;
         
     }
 
@@ -167,7 +144,7 @@ a {
                             text-align: left;
                             font: normal normal normal 18px Poppins;
                             letter-spacing: 0px;
-                            // color: #E8E1F0;
+
                             opacity: 1;
                         }
 
@@ -175,20 +152,17 @@ a {
                             text-align: left;
                             font: normal normal normal 35px Poppins;
                             letter-spacing: 0px;
-                            // color: #E8E1F0;
+
                             opacity: 1;
                         }
                     }
 
                     .link-btn-arrow {
-                        // width: 100%;
+
                         display: flex;
                         justify-content: flex-end;
                         background-image: url('../assets/img/angle-right-solid.svg');
-                        // img {
-                        //     width: 22.87px;
-                        //     height: 40px;
-                        // }
+                      
                         width: 22.87px;
                         height: 40px;
                         background-size: cover;
@@ -207,16 +181,10 @@ a {
                 }
             }
 .homepage-row {
-    // width: 100%;
-    // height: 100%
     position: relative;
     width: 100vw;
     height: 90vh;
     background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
-    // background-image: url("../assets/img/hero_homepage.svg");
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
 
    
 
@@ -227,7 +195,6 @@ a {
     #homepage-container {
         width: 100vw;
         height: 100vh;
-        // padding: 200px 0 300px 0;
 
         .hero-container {
             display: flex;
@@ -243,7 +210,7 @@ a {
             #hero-text {
                 width: 60%;
                 height: 25%;
-                // margin-top: 10px;
+
             }
 
             #hero-btn {
