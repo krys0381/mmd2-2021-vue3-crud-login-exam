@@ -1,13 +1,13 @@
 <template>
-    <div class="homepage">
+    <div class="homepage ">
         <Header />
-        <div class="homepage-row container-fluid g-0">
+        <div class="homepage-row container-fluid d-flex align-items-end overflow-hidden">
             <div class="container">
                 <div class="row" id="homepage-container">
                     <!-- <div class="col-12 p-0"> -->
                         <!-- <div id="homepage-container"> -->
 
-                        <div class="hero-text-container d-flex flex-column align-items-center ">
+                        <div class="hero-text-container d-flex flex-column align-items-center justify-content-center">
                              <div class="hero-container">
                                 <div id="hero-heading">
                                     <h1>Because starting up a tech business should be possible.</h1>
@@ -25,9 +25,9 @@
                                     <button type="button" class="btn btn-primary btn-lg 2">JOIN OUR EVENT NOW!</button>
                                 </div>
                             </div> -->
-                            <div class="hero-image-container d-none d-xl-flex">
+                            <!-- <div class="hero-image-container d-none d-xl-flex">
 
-                            </div>
+                            </div> -->
                         </div>
 
                             <div class="hero-container d-none d-xl-flex">
@@ -60,6 +60,9 @@
                     <!-- </div> -->
                 </div>
             </div>
+               <div class="hero-image-container d-none d-xl-flex">
+
+                </div>
         </div>
         <IntroductionComponent />
         <OurServicesComponent />
@@ -127,11 +130,12 @@ a {
         background-image: url('../assets/img/hero_transparent-04-01.svg');
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 50%;
+        width: 100vw;
+        height: 60%;
+        margin-left: -12px;
         position: absolute;
-        margin-top: 200px;
- 
+        // margin-top: 200px;
+        // margin-bottom: 0px
         
     }
 
