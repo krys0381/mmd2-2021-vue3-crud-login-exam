@@ -115,6 +115,7 @@ export default {
 a {
     text-decoration: none;
 }
+
 .homepage-row {
     // width: 100%;
     // height: 100%
@@ -182,7 +183,7 @@ a {
 
             #link-btns {
                 width: 80%;
-                margin-top: 280px;
+                margin-top: 240px;
                 display: flex;
                 position: absolute;
                 height: 184px;
