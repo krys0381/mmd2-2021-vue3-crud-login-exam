@@ -6,24 +6,24 @@
               <div class="subtitle-line"></div>
               <h4>PEOPLE BEHIND TEHCHHUB SYD</h4>
         </div>
-        <div class="team-text-container d-flex align-items-start my-2">
-           <h2 class="col-lg-6 ">
+        <div class="team-text-container d-flex align-items-start my-2 flex-wrap">
+           <h2 class="col-lg-6 col-sm-12 col-12 ">
               THE TEAM
             </h2>
-            <p class="team-text-p col-lg-6">
+            <p class="team-text-p col-lg-6 col-sm-12 col-12">
               Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, 
               <br><br>
               Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, 
             </p>
         </div>
-        <div class="team-member-carousel-container d-flex flex-column justify-content-center">
-                    <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center">
-                    <div class="team-slider-button left-button d-flex justify-content-center align-items-center">
+        <div class="team-member-carousel-container d-flex flex-column justify-content-center col-sm-12 col-12">
+         <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center">
+                    <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center">
                         <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
                     </div>
-                    <div class="team-card-container">
+                    <div class="team-card-container d-flex flex-column col-lg-6 col-md-12 col-sm-12 col-12">
                       <div class="team-image">
-                        <img src="../../assets/img/business-man.jpg" width="819" height="586" alt="">
+                          
                       </div>
                       <div class="team-card-info m-5">
                         <p class="team-name">
@@ -48,11 +48,23 @@
                         </div>
                       </div>
                     </div>
-                <div class="team-slider-button right-button d-flex justify-content-center align-items-center">
+                <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center">
                   <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
                 </div>
         </div>
-        <div class="slider-pagination-line align-self-center"> </div>
+       
+        <div class="pagination-container col-lg-6 col-md-12 col-sm-12 col-12 align-self-center pb-5">
+            <div class="slider-pagination-line  "> </div>
+        </div>
+         <div class="arrow-mobile d-lg-none d-flex  col-12 justify-content-center"> <!-- show only on mobile version -->
+            <div class="team-slider-button left-button d-flex justify-content-center align-items-center mx-3">
+                    <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
+            </div>
+            <div class="team-slider-button right-button d-flex justify-content-center align-items-center">
+                  <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
+            </div>
+        </div>
+        
         </div>  
       </div>
     </div>
@@ -94,9 +106,18 @@
 }
 
 .team-card-container{
-  height: 910px;
-  width: 819px;
+  // min-height: 910px;
+  // width: 100%;
   background-color: $basecolor;
+}
+
+.team-image{
+  background-image: url('../../assets/img/business-man.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
 
 .team-name {
@@ -130,7 +151,7 @@
 
 .slider-pagination-line {
   height: 0;
-  width: 812px;
+  width: 100%;
   background-color: $backgroundcolor;
   border: 1.5px solid $backgroundcolor;
   opacity: 1;
