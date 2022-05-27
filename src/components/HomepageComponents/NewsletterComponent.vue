@@ -11,16 +11,16 @@
                                 <h2>NEWSLETTER</h2>
                                 <div><p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p></div>
                         </div>
-                        <form action="" class="form-container col-lg-6 col-sm-12 col-12 align-items-end">
+                        <form action="" class="form col-lg-6 col-sm-12 col-12 align-items-end" ref="form" @submit.prevent="sendMail">
                             <div class="mb-3 d-flex flex-column align-items-start">
                                 <label for="nameInput" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="nameInput" placeholder="" required>
+                                <input name="from_name" type="text" class="form-control" id="nameInput" placeholder="" :value="inputFieldReset" required>
                             </div>
                             <div class="mb-3 d-flex flex-column align-items-start">
                                 <label for="emailInput" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="" required>
+                                <input name="email" type="email" class="form-control" id="emailInput" placeholder="" :value="inputFieldReset" required>
                             </div>
-                            <button type="button" class="btn btn-primary col-12 col-xl-12 btn-lg mt-3">SUBSCRIBE</button>
+                            <button type="submit" class="btn btn-primary col-12 col-xl-12 btn-lg mt-3" name="send">SUBSCRIBE</button>
                         </form>
                        
                     </div>
@@ -30,8 +30,30 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
+import {ref} from 'vue';
+
 export default {
-    
+    setup() {
+        const form = ref(null);
+        const inputFieldReset = ref(null);
+
+        const sendMail = () => {
+            emailjs.sendForm('service_5phzrh4', 'template_ip0kraj', form.value, 'Lp2I8LyFBAcVuc0oT')
+            .then(() => {
+                alert('Message sent!')
+                inputFieldReset.value = " ";
+            }, (error) => {
+                alert('Message not sent', error);
+            });
+        }
+
+        return {
+            form,
+            inputFieldReset,
+            sendMail
+        }
+    }
 }
 </script>
 
@@ -52,10 +74,6 @@ export default {
 
 .newsletter-component {
     background: $backgroundcolor;
-}
-
-.form-container{
-    // background-color: red;
 }
 
 .row{
