@@ -16,14 +16,7 @@
                 <div class="some-image some-3 m-2"></div>
                 <div class="some-image some-4 m-2"></div>
             </div>
-<<<<<<< Updated upstream
-
-            <div class="col-sm-6 p-0"></div>
-
-            <div class="col-12 p-0">
-=======
             <!-- <div class="col-12 p-0">
->>>>>>> Stashed changes
                 <div class="followus-container">
                     <div class="followus-gallery-container">
                         <div class="followus-gallery"><img src="../../assets/img/crowd-sportsman.jpg" alt=""></div>
