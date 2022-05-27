@@ -68,6 +68,7 @@
     </div>
     <EventsCalendarComponent />
     <EventVideosComponent />
+    <EventGalleryComponent />
     <Footer />
   </div>
 </template>
@@ -78,6 +79,7 @@
 import Header from '../components/Header.vue'
 import EventsCalendarComponent from '@/components/EventsComponents/EventsCalendarComponent.vue'
 import EventVideosComponent from '@/components/EventsComponents/EventVideosComponent.vue'
+import EventGalleryComponent from '@/components/EventsComponents/EventGalleryComponent.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -86,6 +88,7 @@ export default {
     Header,
     EventsCalendarComponent,
     EventVideosComponent,
+    EventGalleryComponent,
     Footer
   }
 }

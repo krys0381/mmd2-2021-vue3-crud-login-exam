@@ -2,7 +2,7 @@
   <div class="events-component">
     <div class="events-row row g-0">
 
-      <div class="col-12 col-sm-6 p-0">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-0">
         <div class="events-container">
           <div class="events-text-container">
             <div id="line"></div>
@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 p-0"></div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-0"></div>
 
       <div class="col-12 p-0">
         <div id="extra">

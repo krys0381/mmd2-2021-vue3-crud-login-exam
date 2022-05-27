@@ -1,36 +1,38 @@
 <template>
-  <div class="eventvideos-container container-fluid overflow-hidden">
+  <div class="eventgallery-container container-fluid overflow-hidden">
     <div class="container">
 
-        <div class="eventvideos-row row g-0">
-            <div class="col-12 col-sm-6 p-0">
-                <div class="eventvideos-box">
-                    <div class="eventvideos-text-box">
+        <div class="eventgallery-row row g-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-0">
+                <div class="eventgallery-heading-box">
+                    <div class="eventgallery-text-box">
                         <div id="line"></div>
-                        <h4>RECORDINGS FROM PREVIOUS EVENTS</h4>
+                        <h4>PHOTOS FROM PREVIOUS EVENTS</h4>
                     </div>
-                    <div class="eventvideos-text-box"><h2>VIDEOS</h2></div>
+                    <div class="eventgallery-text-box"><h2>GALLERY</h2></div>
                 </div>
             </div>
+        
+            <div class="col-sm-6 col-md-6 col-lg-6 p-0"></div>
 
-            <div class="col-sm-6 p-0"></div>
+            <!-- Photos -->
 
             <div class="col-12 col-sm-3 col-md-3 col-lg-3 p-0">
                 <div id="left" class="btn-cover">
                     <div class="eventbtns-box">
                         <div class="team-slider-button left-button d-flex justify-content-center align-items-center">
-                            <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
+                            <img src="../../assets/img/chevron-left-solid-purple.svg" height="40" width="22.87" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-0">
                 <div class="cover">
 
-                    <div class="eventvideos-box">
-                        <div class="eventvideos-video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OS8taasZl8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="eventgallery-box">
+                        <div class="gallery-image">
+                            <img src="../../assets/img/crowd-sportsman.jpg" alt="">
                         </div>
                     </div>
 
@@ -47,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-12 p-0">
+            <div class="col-sm-12 p-0">
                 <div class="line-cover">
                     <div class="slider-pagination-line align-self-center"></div>
                 </div>
@@ -67,15 +69,41 @@ export default {
 
 <style scoped lang="scss">
 @import "../../assets/shared.scss";
-@include light-heading2;
-@include light-heading4;
+@include dark-heading2;
+@include dark-heading4;
 
-.eventvideos-container {
-    background-color: $shadecolor;
+.eventgallery-container {
+    background-color: $backgroundcolor;
 }
 
-.eventvideos-row {
+.eventgallery-row {
     padding: 80px 0;
+}
+
+.eventgallery-heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // Text
+
+    .eventgallery-text-box {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+
+        #line {
+            height: 0;
+            width: 80px;
+            background-color: $shadecolor;
+            border: 1.5px solid $shadecolor;
+            opacity: 1;
+            margin-right: 20px;
+        }
+    }
 }
 
 .cover {
@@ -86,41 +114,25 @@ export default {
     align-items: center;
 }
 
-.eventvideos-box {
+.eventgallery-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
 
-    // Text
-
-    .eventvideos-text-box {
-        width: 85%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        text-align: left;
-
-        #line {
-            height: 0;
-            width: 80px;
-            background-color: $backgroundcolor;
-            border: 1.5px solid $backgroundcolor;
-            opacity: 1;
-            margin-right: 20px;
-        }
-    }
-
-    // Video
-
-    .eventvideos-video {
+    .gallery-image {
         width: 100%;
-        height: 100%;
-        padding: 30px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
     }
 }
 
-.btn-cover {
+// Buttons
+
+.btn-cover{
     width: 100%;
     height: 100%;
     display: flex;
@@ -129,9 +141,8 @@ export default {
 
     .eventbtns-box {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        width: 100%;
 
         .team-slider-button{
             // background: red;
@@ -145,12 +156,12 @@ export default {
         }
 
         .left-button{
-            border: 2px solid $backgroundcolor;
+            border: 2px solid $lightcolor;
         }
-
     }
 }
 
+// Line
 // Line
 
 .line-cover {
@@ -164,13 +175,13 @@ export default {
     .slider-pagination-line {
         height: 0;
         width: 812px;
-        background-color: $backgroundcolor;
-        border: 1.5px solid $backgroundcolor;
+        background-color: $lightcolor;
+        border: 1.5px solid $lightcolor;
         opacity: 1;
     }
 }
 
-// Extra
+// Extra 
 
 #left {
     justify-content: flex-start;
