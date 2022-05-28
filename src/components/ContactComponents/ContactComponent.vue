@@ -1,0 +1,137 @@
+<template>
+    <div class="contact-component container-fluid overflow-hidden">
+        <div class="contact-row container">
+            <div class="row d-flex flex-column align-items-start justify-content-start">
+                    <div class="d-flex justify-content-start align-items-center">
+                            <div id="line"></div>
+                            <h4>GET IN TOUCH</h4>
+                    </div>
+                    <div class="d-flex flex-wrap col-lg-12 col-sm-12 col-12 mb-5 justify-content-between">
+                        <div class="contact-content-container col-lg-5 col-sm-12 col-12 ">
+                                <h2>CONTACT</h2>
+                                <div><p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p></div>
+                        </div>
+
+                        <form action="" class="form col-lg-6 col-sm-12 col-12 align-items-end" ref="form" @submit.prevent="sendMail">
+                            <div class="mb-3 d-flex flex-column align-items-start">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input name="from_name" type="text" class="form-control" id="nameInput" placeholder="" :value="inputFieldReset" required>
+                            </div>
+                            <div class="mb-3 d-flex flex-column align-items-start">
+                                <label for="emailInput" class="form-label">Email</label>
+                                <input name="email" type="email" class="form-control" id="emailInput" placeholder="" :value="inputFieldReset" required>
+                            </div>
+                            <div class="mb-3 d-flex flex-column align-items-start">
+                                <label for="messageInput" class="form-label">Message</label>
+                                <textarea name="message" type="text" class="form-control" id="messageInput" placeholder="" :value="inputFieldReset" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-12 col-xl-12 btn-lg mt-3" name="send">SEND MESSAGE</button>
+                        </form>
+                       
+                    </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import emailjs from 'emailjs-com'
+import {ref} from 'vue';
+
+export default {
+    setup() {
+        const form = ref(null);
+        const inputFieldReset = ref(null);
+
+        const sendMail = () => {
+            emailjs.sendForm('service_5phzrh4', 'template_bozxxoj', form.value, 'Lp2I8LyFBAcVuc0oT')
+            .then(() => {
+                alert('Message sent!')
+                inputFieldReset.value = " ";
+            }, (error) => {
+                alert('Message not sent', error);
+            });
+        }
+
+        return {
+            form,
+            inputFieldReset,
+            sendMail
+        }
+    }
+}
+</script>
+
+<style scoped lang="scss">
+@import "../../assets/shared.scss";
+@include light-heading2;
+@include light-heading4;
+@include light-heading5;
+@include light-paragraph1;  
+
+.contact-component {
+    background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: darken;
+    opacity: 1;;
+}
+
+.row{
+    padding: 80px 0;
+}
+
+#line {
+    height: 0;
+    width: 80px;
+    background-color: $backgroundcolor;
+    border: 1.5px solid $backgroundcolor;
+    opacity: 1;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #E69B5A;
+    border-radius: 0;
+    border-color: #E69B5A;
+    padding: 15px 30px;
+    transition: 0.3s;
+    &:hover{
+        background-color: $accentdarkcolor;
+    }
+}
+
+.form-control{
+    border-radius: 0;
+    height: 64px;
+    background-color: $whitecolor;
+    border-color: $basecolor;
+}
+
+#messageInput {
+    height: 128px;
+}
+
+.form-label{
+    color: $backgroundcolor;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // Text
+
+    .contact-text-container {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 20px 0;
+
+       
+    }
+}
+
+</style>

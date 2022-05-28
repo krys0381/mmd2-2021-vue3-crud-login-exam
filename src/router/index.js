@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Events from '../views/EventsView.vue'
 import Homepage from '../views/HomepageView.vue'
 import AboutView from '../views/AboutView.vue'
+import Contact from '../views/ContactView.vue'
 
 // for editing (CRUD)
 import EditEvents from '../views/EditEvents.vue'
@@ -30,6 +31,11 @@ const routes = [
     path: '/events',
     name: 'EventsView',
     component: Events
+  },
+  {
+    path: '/contact',
+    name: 'ContactView',
+    component: Contact
   },
   {
     path: '/editEvents/:id',  // id parameter to know which project we clicked

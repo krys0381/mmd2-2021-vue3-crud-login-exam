@@ -15,7 +15,7 @@
                     <div class="nav">  
                         <router-link to="/about">About</router-link> 
                         <router-link to="/events">Events</router-link> 
-                        <a href="">Contact</a> 
+                        <router-link to="/contact">Contact</router-link> 
                         <a href="">FAQ</a>
                         <a href="">Start-ups</a>
                         <a href="https://techhubinvest.com/">Investors</a>

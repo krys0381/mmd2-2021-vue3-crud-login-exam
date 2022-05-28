@@ -22,7 +22,7 @@
                             <div class="nav">  
                                 <router-link to="/about">ABOUT</router-link>
                                 <router-link to="/events">EVENTS</router-link>
-                                <router-link to="/admin">ADMIN</router-link>
+                                <router-link to="/contact">CONTACT</router-link>
                             </div>
                         </div>
                         <router-view/>
