@@ -1,5 +1,5 @@
 <template>
-    <div class="homepage-out-container">
+    <div class="homepage-out-container overflow-hidden">
         <Header />
           <HomeHeroComponent />
       

@@ -1,74 +1,12 @@
 <template>
-  <div class="events">
+  <div class="events overflow-hidden">
     <Header />
-    <div class="events-row row g-0">
-
-      <div class="col-12 col-sm-6 p-0">
-        <div class="events-container">
-
-          <div class="hero-container">
-            <div id="hero-heading">
-              Tech &amp; Tequila Kickstart
-            </div>
-          </div>
-
-          <div class="hero-container">
-            <div id="hero-text">
-              <p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p>
-            </div>
-          </div>
-
-          <div class="hero-container">
-
-            <div class="hero-location-time">
-              <div class="location-time-img">
-                <img src="../assets/img/location.svg" alt="">
-              </div>
-              <p>Esbjerg, Denmark</p>
-            </div>
-
-            <div class="hero-location-time">
-              <div class="location-time-img">
-                <img src="../assets/img/clock.svg" alt="">
-              </div>
-              <p>7:00pm - 9:00pm</p>
-            </div>
-
-          </div>
-
-          <div class="hero-container">
-            <div id="date">
-              <div id="date-img">
-                <img src="../assets/img/calendar.svg" alt="">
-              </div>
-              <div id="date-text-container">
-                <div id="date-text">19 May</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-container">
-            <div id="hero-btn">
-              <button type="button" class="btn btn-primary btn-lg"><h6>GET TICKETS NOW!</h6></button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-12 col-sm-6 p-0">
-        <div id="extra">
-          <div class="events-picture-container">
-            <div id="hero-picture">
-              <img src="../assets/img/eventspreview.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <EventsHeroComponent />
     <EventsCalendarComponent />
+    <EventsArchiveComponent />
     <EventVideosComponent />
     <EventGalleryComponent />
+    <EventsReviewComponent />
     <Footer />
   </div>
 </template>
@@ -77,25 +15,32 @@
 // Stuff for CRUD
 
 import Header from '../components/Header.vue'
+import EventsHeroComponent from '../components/EventsComponents/EventsHeroComponent.vue'
 import EventsCalendarComponent from '@/components/EventsComponents/EventsCalendarComponent.vue'
+import EventsArchiveComponent from '../components/EventsComponents/EventsArchiveComponent.vue'
 import EventVideosComponent from '@/components/EventsComponents/EventVideosComponent.vue'
 import EventGalleryComponent from '@/components/EventsComponents/EventGalleryComponent.vue'
+import EventsReviewComponent from '../components/EventsComponents/EventReviewComponent.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'EventsView',
   components: {
     Header,
+    EventsHeroComponent,
+    EventsArchiveComponent,
     EventsCalendarComponent,
     EventVideosComponent,
     EventGalleryComponent,
+    EventsReviewComponent,
     Footer
   }
 }
 </script>
 
 <style scoped lang="scss">
-@import "../assets/shared.scss";
+
+@import "../assets/_shared.scss";
 @include light-heading1;
 @include heading3;
 @include heading6;

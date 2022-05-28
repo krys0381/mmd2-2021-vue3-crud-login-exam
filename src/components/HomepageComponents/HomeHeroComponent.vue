@@ -50,7 +50,10 @@
  background-color: #E69B5A;
  border-radius: 0;
  border-color: #E69B5A;
-     
+ transition: 0.3s;
+    &:hover{
+        background-color: $accentdarkcolor;
+      }
 }
 
 .hero-title,

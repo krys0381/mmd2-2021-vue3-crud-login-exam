@@ -1,26 +1,47 @@
 <template>
- <div class="eventvideo-container container-fluid">
+ <div class="event-review-container container-fluid">
     <div class="container">
       <div class="row">
         <div class="subtitle-container d-flex align-items-center">
               <div class="subtitle-line"></div>
-              <h4>RECORDINGS FROM PREVIOUS EVENTS</h4>
+              <h4>WHAT THEY SAY ABOUT OUR EVENTS</h4>
         </div>
-        <div class="team-text-container d-flex align-items-start my-2 flex-wrap">
+        <div class="review-text-container d-flex align-items-start my-2 flex-wrap">
            <h2 class="col-lg-6 col-sm-12 col-12 ">
-             VIDEOS
+              EVENT REVIEWS
             </h2>
-          
         </div>
         <div class="team-member-carousel-container d-flex flex-column justify-content-center col-sm-12 col-12">
          <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center">
                     <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center">
                         <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
                     </div>
-                    <div class="video-container col-lg-6 col-sm-12 col-12">
-                        <iframe height="656" src="https://www.youtube.com/embed/KmxwCNRL88U?controls=1&modestbranding=1&rel=0&autoplay=1"  allowfullscreen></iframe>
+                 <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="review-container p-5">
+                      <div class="quote-left d-flex justify-content-start">
+                        <img src="../../assets/img/quote-left.svg" width="48.92" height="42.81" alt="">
+                      </div>
+                       <p class="py-3">
+                          Phasellus dignissim, tellus in pellentesque mollis, mauris orci dignissim nisl, id gravida nunc enim quis nibh. Maecenas convallis eros a ante dignissim, vitae elementum metus facilisis. 
+                        </p>
+                        <div class="quote-right d-flex justify-content-end">
+                           <img src="../../assets/img/quote-right.svg" width="48.92" height="42.81" alt="">
+                        </div>
+                        <div class="reviewer-container d-flex align-items-center justify-content-start">
+                          <div class="reviewer-image me-3">
+                           
+                          </div>
+                          <div class="d-flex flex-column">
+                               <p class="reviewer-name pb-2">Adam Willis</p>
+                               <p>Student at EASV</p>
+                          </div>
+                         
+                        </div>
+                       
                     </div>
-                     
+                 </div>  
+                   
+
                 <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center">
                   <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
                 </div>
@@ -51,18 +72,31 @@
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/shared.scss";
-@include light-heading2;
-@include light-heading4;
-.eventvideo-container {
+@import "../../assets/_shared.scss";
+@include dark-heading2;
+@include dark-heading4;
+@include light-paragraph1;
+
+.reviewer-name{
+
+    font-weight: bold;
+ 
+}
+.event-review-container{
+  background-color: $lightcolor;
+}
+
+.review-container{
   background-color: $shadecolor;
+  min-height: 311px;
+  width: 100%;
 }
 
 .subtitle-line {
   height: 0;
   width: 80px;
-  background-color: $backgroundcolor;
-  border: 1.5px solid $backgroundcolor;
+  background-color: $shadecolor;
+  border: 1.5px solid $shadecolor;
   opacity: 1;
   margin-right: 20px;
 }
@@ -129,8 +163,14 @@
  
 }
 
-iframe{
-    width: 100%;
+.reviewer-image{
+  background-image: url('../../assets/img/business-man.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 63px;
+  height: 63px;
+  border-radius: 44px;
 }
 
 

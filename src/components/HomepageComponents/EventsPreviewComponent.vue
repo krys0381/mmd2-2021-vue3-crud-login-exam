@@ -3,50 +3,11 @@
         <div class="eventspreview-row container">
             <div class="row d-flex justify-content-between align-items-start">
 
-            <!-- <div class="col-12 col-sm-6 p-0"> -->
                 <div class="col-lg-6 col-sm-12 col-12 eventspreview-image mb-5">
                            
                  </div>
-                <!-- <div id="extra">
-                    <div class="eventspreview-container">
-                        <div id="eventspreview-picture">
-                            <img src="../../assets/img/eventspreview.jpg" alt="">
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div> -->
 
-
-                <!-- <div class="eventspreview-container col-lg-5 col-sm-12 col-12">
-                    <div class="eventspreview-text-container">
-                        <div id="line"></div>
-                        <h4>WHAT'S HAPPENING</h4>
-                    </div>
-                    <div class="eventspreview-text-container"><h2>THE EVENTS</h2></div>
-
-                    <div 
-                    class="eventspreview-list-container" 
-                    v-for="{ id, date, name, location } in events" :key="id"
-                    >
-                        <div class="eventspreview-list-item">
-                            <div class="eventspreview-list-text">
-                                <h5>{{ name }}</h5>
-                                <p>{{ location }}</p>
-                            </div>
-
-                            <div class="eventspreview-list-date">
-                                <div class="date">{{ date }}</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="eventspreview-text-container">
-                        <button type="button" class="btn btn-primary btn-lg">VIEW ALL</button>
-                    </div>
-                </div>
-         -->
-
-            <div class="col-lg-5 col-sm-12 col-12  d-flex flex-column align-items-start justify-content-center ">
+                <div class="col-lg-5 col-sm-12 col-12  d-flex flex-column align-items-start justify-content-center ">
                     <div class="d-flex align-items-center justify-content-start">
                         <div id="line"></div>
                         <h4>WHAT'S HAPPENING</h4>
@@ -74,8 +35,8 @@
 
                     </div>
 
-                    <div class="eventspreview-text-container">
-                        <button type="button" class="btn btn-primary btn-lg">VIEW ALL</button>
+                    <div class="eventspreview-text-container col-lg-12 col-sm-12 col-12 d-flex justify-content-start align-item-center">
+                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12">VIEW ALL</button>
                     </div>
                 </div>
         

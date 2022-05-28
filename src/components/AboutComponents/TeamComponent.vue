@@ -78,7 +78,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/shared.scss";
+@import "../../assets/_shared.scss";
 @include dark-heading2;
 @include dark-heading4;
 @include light-paragraph1;

@@ -1,5 +1,5 @@
 <template>
-    <div class="ourpartners-component container-fluid">
+    <div class="ourpartners-component container-fluid overflow-hidden">
         <div class="ourpartners-row container">
             <div class="row">
                 <div class="d-flex flex-column justify-content-start mb-5">
@@ -96,7 +96,7 @@ export default {
 
 .logo-2{
     background-image: url('../../assets/img/innovationsfonden.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 1px solid $basecolor;
@@ -114,7 +114,7 @@ export default {
 
 .logo-4{
     background-image: url('../../assets/img/innovationsfonden.png');
-    background-size: cover;
+     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 1px solid $basecolor;
@@ -132,7 +132,7 @@ export default {
 
 .logo-6{
     background-image: url('../../assets/img/innovationsfonden.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 1px solid $basecolor;
@@ -150,7 +150,7 @@ export default {
 
 .logo-8{
     background-image: url('../../assets/img/innovationsfonden.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 1px solid $basecolor;

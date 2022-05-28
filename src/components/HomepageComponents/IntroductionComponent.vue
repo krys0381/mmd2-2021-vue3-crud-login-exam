@@ -27,8 +27,8 @@
                             <br><br>
                             Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id, 
                         </p></div>
-                        <div class="introduction-text-container">
-                            <button type="button" class="btn btn-primary btn-lg">READ MORE</button>
+                        <div class="introduction-text-container col-lg-6 col-sm-12 col-12">
+                            <button type="button" class="btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">READ MORE</button>
                         </div>
                     </div>
                 </div>

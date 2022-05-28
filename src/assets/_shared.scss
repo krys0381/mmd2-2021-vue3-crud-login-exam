@@ -50,6 +50,16 @@ $accentdarkcolor: #C7804E;
     }
 }
 
+@mixin light-sub_event_heading2 {
+    h2 {
+        text-align: left;
+        font: normal normal bold 40px Poppins;
+        letter-spacing: 0px;
+        color: $backgroundcolor;
+        opacity: 1;
+    }
+}
+
 @mixin heading3 {
     h3 {
         text-align: center;

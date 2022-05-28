@@ -10,12 +10,27 @@
                     </div>
                    <h2>FOLLOW US</h2>
                 </div>
-            <div class="some-posts-container d-flex flex-wrap align-items-center justify-content-center col-sm-12 col-12">
+            <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-3 d-flex flex-wrap">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="some-image some-1 "></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="some-image some-2 "></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="some-image some-3 "></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="some-image some-4 "></div>
+                </div>
+
+            </div>
+            <!-- <div class="some-posts-container d-flex flex-wrap align-items-center justify-content-center col-sm-12 col-12">
                 <div class="some-image some-1 m-2"></div>
                 <div class="some-image some-2 m-2"></div>
                 <div class="some-image some-3 m-2"></div>
                 <div class="some-image some-4 m-2"></div>
-            </div>
+            </div> -->
             <!-- <div class="col-12 p-0">
                 <div class="followus-container">
                     <div class="followus-gallery-container">
@@ -29,8 +44,8 @@
 
             <div class="col-12 p-0">
                 <div class="followus-container">
-                    <div class="followus-btn-container">
-                        <button type="button" class="btn btn-primary btn-lg">VIEW MORE</button>
+                    <div class="followus-btn-container col-lg-6 col-sm-12 col-12">
+                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12">VIEW MORE</button>
                     </div>
                 </div>
             </div>
@@ -60,8 +75,10 @@ padding: 80px 0;
 }
 
 .some-image{
+    // height: 300px;
+    // width: 300px;
     height: 300px;
-    width: 300px;
+    width: 100%;
 }
 
 .some-1{
