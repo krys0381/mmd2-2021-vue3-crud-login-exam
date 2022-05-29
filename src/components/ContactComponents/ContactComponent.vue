@@ -1,6 +1,6 @@
 <template>
-    <div class="contact-component container-fluid overflow-hidden">
-        <div class="contact-row container">
+    <div class="contact-component container-fluid overflow-hidden ">
+        <div class="contact-row container d-flex justify-content-center align-items-center">
             <div class="row d-flex flex-column align-items-start justify-content-start">
                     <div class="d-flex justify-content-start align-items-center">
                             <div id="line"></div>
@@ -73,10 +73,15 @@ export default {
     background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: darken;
     opacity: 1;;
+   
 }
 
 .row{
     padding: 80px 0;
+}
+
+.contact-row{
+    height: 100vh;
 }
 
 #line {
