@@ -3,7 +3,7 @@
         <div class="followus-row container">
             <div class="row">
                
-                <div class="followus-container d-flex flex-column align-items-start justify-content-start mb-5 ">
+                <div class="followus-container d-flex flex-column align-items-start justify-content-start">
                     <div class="followus-text-container">
                         <div id="line"></div>
                         <h4>WHAT'S HAPPENING</h4>
