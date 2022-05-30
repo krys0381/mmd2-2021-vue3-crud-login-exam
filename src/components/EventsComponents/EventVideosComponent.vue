@@ -18,7 +18,7 @@
                         <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
                     </div>
                     <div class="video-container col-lg-6 col-sm-12 col-12">
-                        <iframe height="656" src="https://www.youtube.com/embed/KmxwCNRL88U?controls=1&modestbranding=1&rel=0&autoplay=1"  allowfullscreen></iframe>
+                        <iframe height="656" src="https://www.youtube.com/embed/GjEsjnm4HpY?controls=1&modestbranding=1&rel=0&autoplay=1"  allowfullscreen></iframe>
                     </div>
                      
                 <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center">

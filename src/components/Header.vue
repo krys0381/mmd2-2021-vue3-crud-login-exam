@@ -3,8 +3,8 @@
         <div class="container">
              <div class="header-row row d-none d-xl-flex">
                 <div class="desktop-menu-container d-none d-xl-flex justify-content-between">
-                        <div class="left-menu-container d-flex col-6 align-items-center justify-content-start g-2" >
-                            <div class="logo-container col-5 me-4  ">
+                        <div class="left-menu-container d-flex col-6 align-items-center justify-content-start" >
+                            <div class="logo-container col-5 ">
                                 <a href="/"> <div class="image-container "> </div> </a>
                             </div>
                             <div class="startup-invest-container d-flex g-2 col-6">
