@@ -45,6 +45,10 @@
  
 }
 
+.content-container{
+  padding-bottom: 150px;
+}
+
 .btn-primary{
  padding: 15px 30px;
  background-color: #E69B5A;
@@ -60,6 +64,26 @@
 .hero-subtitle,
 .btn-primary{
 z-index: 1;
+}
+
+// Media queries
+
+@media (max-width: 767.98px) { 
+  .content-container{
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 991.98px) { 
+  .content-container{
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .content-container{
+    padding-bottom: 0px;
+  }
 }
 
 </style>

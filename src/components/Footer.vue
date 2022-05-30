@@ -17,9 +17,9 @@
                                 <router-link to="/about">About</router-link> 
                                 <router-link to="/events">Events</router-link> 
                                 <router-link to="/contact">Contact</router-link> 
-                                <a href="">FAQ</a>
                                 <a href="">Start-ups</a>
                                 <a href="https://techhubinvest.com/">Investors</a>
+                                <router-link to="/admin" class="mb-3">Admin</router-link>
                             </div>
                         </div>
                         <router-view/>
@@ -88,9 +88,9 @@
                                     <router-link to="/about" class="mb-3">ABOUT</router-link>
                                     <router-link to="/events" class="mb-3">EVENTS</router-link>
                                     <router-link to="/contact" class="mb-3">CONTACT</router-link>
-                                    <a href="#" class="mb-3">FAQ</a>
                                     <a href="#" class="mb-3">START-UPS</a>
                                     <a href="https://techhubinvest.com/">INVESTORS</a>
+                                    <router-link to="/admin" class="mb-3">ADMIN</router-link>
                             </div>
                             
                            

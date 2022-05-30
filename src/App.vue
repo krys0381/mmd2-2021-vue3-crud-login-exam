@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import firebase from 'firebase' // firebase general stuff
+/* import firebase from 'firebase' // firebase general stuff
 import {} from '@/firebase.js' // all from firebase.js file
 
 import { onBeforeMount} from 'vue' // lifecycle hook
@@ -25,7 +25,7 @@ export default {
       })
     })
   }
-}
+} */
 </script>
 
 <style lang="scss">

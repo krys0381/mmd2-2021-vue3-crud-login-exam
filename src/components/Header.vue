@@ -20,7 +20,7 @@
                                         <router-link to="/contact" class="">CONTACT</router-link>
                                 </div>
                                 <div id="btn-box">
-                                    <button type="button" class="btn btn-primary btn-lg">LET'S TALK</button>
+                                    <button type="button" class="btn btn-primary btn-lg" @click="$router.push('contact')">LET'S TALK</button>
                                 </div>
 
                         </div> 

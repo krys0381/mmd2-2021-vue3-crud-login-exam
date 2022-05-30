@@ -254,4 +254,28 @@ export default {
     }
 }
 
+@media (max-width: 1199.98px) {
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .partners-logo-container {
+        width: 85%;
+    }
+
+    .logo-2{
+        border-right: none;
+    }
+
+    .logo-5{
+        border-bottom: 2px solid $basecolor;
+    }
+    
+    .logo-6{
+        border-right: none;
+        border-bottom: 2px solid $basecolor;
+    }
+}
+
 </style>

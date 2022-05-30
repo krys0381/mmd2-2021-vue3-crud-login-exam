@@ -115,11 +115,11 @@ a {
 }
 
   #link-btns {
-                width: 80%;
+                width: 70%;
                 margin-top: 0px;
                 display: flex;
                 position: absolute;
-                height: 184px;
+                height: 150px;
                 align-items: center;
                 justify-content: center;
                 
