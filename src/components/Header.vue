@@ -128,7 +128,7 @@ export default {
 }
 
 .image-container-mobile{
-    background-image: url('../assets/img/logo\ grayscale\ inverted.svg');
+    background-image: url('../assets/img/logo-grayscale-inverted.png');
 }
 
 .burgermenu-container-mobile{
@@ -146,7 +146,7 @@ export default {
 }
 
 .image-container{
-    background-image: url('../assets/img/logo-whitetext_1.svg');
+    background-image: url('../assets/img/whitelogo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

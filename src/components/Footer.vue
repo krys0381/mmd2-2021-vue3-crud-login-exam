@@ -6,7 +6,7 @@
                     <div class="col-6 col-sm-3 p-0">
                         <div class="extra">
                             <div class="logo-links-container">
-                                <div id="logo-box"><a href="/"><img src="../assets/img/logo-whitetext_1.svg" alt=""></a></div>
+                                <div id="logo-box"><a href="/"><img src="../assets/img/whitelogo.png" alt=""></a></div>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ export default {
     #logo-box {
         display: flex;
         align-items: center;
-        width: 75%;
+        width: 100%;
 
         img {
           width: 100%;
@@ -265,7 +265,7 @@ export default {
 }
 
 .image-container-mobile{
-    background-image: url('../assets/img/logo\ grayscale\ inverted.svg');
+    background-image: url('../assets/img/logo-grayscale-inverted.png');
 }
 
 .burgermenu-container-mobile{
