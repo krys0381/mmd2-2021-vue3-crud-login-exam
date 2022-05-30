@@ -203,30 +203,33 @@ export default {
           
         </div>
         <div class="team-member-carousel-container d-flex flex-column justify-content-center col-sm-12 col-12">
-         <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center">
-                    <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center">
-                        <img src="../../assets/img/chevron-left-solid-light-purple.svg" height="40" width="22.87" alt="">
-                    </div>
-                    <div class="gallery-image-container col-lg-8 col-sm-12 col-12">
-                        <img src="../../assets/img/crowd-sportsman.jpg" height="656"  alt="">
-                    </div>
-                     
-                <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center">
-                  <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
+                <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center ">
+                            <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center ">
+                                <img src="../../assets/img/chevron-left-solid-light-purple.svg" height="40" width="22.87" alt="">
+                            </div>
+                            <div class="gallery-image-container col-lg-6 col-sm-12 col-12">
+                                <!-- <img src="../../assets/img/crowd-sportsman.jpg" height="656"  alt=""> -->
+                                <div class="gallery-image">
+
+                                </div>
+                            </div>
+                            
+                        <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center ">
+                        <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
+                        </div>
                 </div>
-        </div>
        
-        <div class="pagination-container col-lg-6 col-md-12 col-sm-12 col-12 align-self-center pb-5">
-            <div class="slider-pagination-line  "> </div>
-        </div>
-         <div class="arrow-mobile d-lg-none d-flex  col-12 justify-content-center"> <!-- show only on mobile version -->
-            <div class="team-slider-button left-button d-flex justify-content-center align-items-center mx-3">
-                    <img src="../../assets/img/chevron-left-solid-light-purple.svg" height="40" width="22.87" alt="">
-            </div>
-            <div class="team-slider-button right-button d-flex justify-content-center align-items-center">
-                  <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
-            </div>
-        </div>
+                <div class="pagination-container col-lg-6 col-md-12 col-sm-12 col-12 align-self-center pb-5">
+                    <div class="slider-pagination-line  "> </div>
+                </div>
+                <div class="arrow-mobile d-lg-none d-flex  col-12 justify-content-center"> <!-- show only on mobile version -->
+                    <div class="team-slider-button left-button d-flex justify-content-center align-items-center mx-3">
+                            <img src="../../assets/img/chevron-left-solid-light-purple.svg" height="40" width="22.87" alt="">
+                    </div>
+                    <div class="team-slider-button right-button d-flex justify-content-center align-items-center">
+                        <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
+                    </div>
+                </div>
         
         </div>  
       </div>
@@ -259,6 +262,15 @@ export default {
 
 .row{
    padding: 80px 0;
+}
+
+.gallery-image {
+    background-image: url('../../assets/img/crowd-sportsman.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 41rem;
+    width: 100%;
 }
 
 // .team-text-p{
