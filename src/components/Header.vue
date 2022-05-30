@@ -146,7 +146,7 @@ export default {
 }
 
 .image-container{
-    background-image: url('../assets/img/logo.png');
+    background-image: url('../assets/img/logo-whitetext_1.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

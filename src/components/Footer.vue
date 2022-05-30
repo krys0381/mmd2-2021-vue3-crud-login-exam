@@ -6,7 +6,7 @@
                     <div class="col-6 col-sm-3 p-0">
                         <div class="extra">
                             <div class="logo-links-container">
-                                <div id="logo-box"><a href="/"><img src="../assets/img/logo.png" alt=""></a></div>
+                                <div id="logo-box"><a href="/"><img src="../assets/img/logo-whitetext_1.svg" alt=""></a></div>
                             </div>
                         </div>
                     </div>

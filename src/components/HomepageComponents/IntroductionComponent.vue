@@ -66,6 +66,12 @@ iframe {
 //    padding: 80px 0;
    padding-top: 200px;
    padding-bottom: 80px;
+
+   @media (max-width: 1200px) {
+       
+        padding-top: 80px;
+        
+     }
 }
 
 .introduction-component{
