@@ -18,7 +18,7 @@
                                    
                                 </div>
                             </a>
-                            <a href="" class="link-btn d-flex align-items-center">
+                            <a href="https://techhubinvest.com" class="link-btn d-flex align-items-center">
                                 <div class="link-btn-text">
                                     <div class="link-btn-text-small">READY TO INVEST IN START-UPS?</div>
                                     <div class="link-btn-text-big mt-4">Investors</div>

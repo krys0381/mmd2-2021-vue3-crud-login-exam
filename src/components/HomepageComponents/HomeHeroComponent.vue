@@ -7,7 +7,7 @@
               <h3 class="hero-subtitle col-lg-8 my-5">
                   We are a community that connects, inspires and helps start-ups, students and investors build their tech business through networking events.
               </h3>
-                <button type="button" class="btn btn-primary btn-lg 2 col-lg-4 col-md-12 col-sm-12 col-12">JOIN OUR EVENT NOW!</button>
+              <button type="button" class="btn btn-primary btn-lg 2 col-lg-4 col-md-12 col-sm-12 col-12" @click="$router.push('events')">JOIN OUR EVENT NOW!</button>
           </div>
       </div>
     </div>

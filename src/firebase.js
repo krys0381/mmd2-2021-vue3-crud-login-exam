@@ -31,9 +31,7 @@ export const createTestimonial = testimonial => {
 // accept project id and return the documentation if it exist in the project collection
 export const getEvent = async id => {
   const event = await eventCollection.doc(id).get()
-  // ternary : condition ? ifTrue : ifFalse
-  return event.exists ? event.data() : null  // firebase exist method (like include/contains) 
-  // Link: https://firebase.google.com/docs/reference/js/firebase.database.DataSnapshot#exists
+  return event.exists ? event.data() : null  
 }
 
 export const getTestimonial = async id => {
@@ -72,9 +70,6 @@ export const useLoadEvents = () => {
       ...doc.data()
     }))
   })
-
-  // Creating this listener, will return us a clean-up function(onUnmounted, 
-  // which we will call on the onUnmounted lifecycle(test with onUpdate)
   onUnmounted(close)
   return events
 }

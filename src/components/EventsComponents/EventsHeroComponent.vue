@@ -2,9 +2,10 @@
   <div class="container-fluid d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row d-flex justify-content-between align-items-center">
-        <div class="event-hero-content-container d-flex flex-column col-lg-5 col-sm-12 col-12">
+        <div 
+        class="event-hero-content-container d-flex flex-column col-lg-5 col-sm-12 col-12">
           <div class="hero-heading">
-               <h2> Tech &amp; Tequila Kickstart</h2> 
+               <h2>Tech &amp; Tequila Kickstart</h2> 
                <h5>Guest speaker Ronnie Baslund</h5>
           </div>
           

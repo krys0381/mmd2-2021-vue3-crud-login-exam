@@ -91,7 +91,8 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid $basecolor;
+    border-bottom: 2px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-2{
@@ -99,8 +100,8 @@ export default {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-bottom: 2px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-3{
@@ -108,17 +109,16 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-bottom: 2px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-4{
     background-image: url('../../assets/img/innovationsfonden.png');
-     background-size: contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-bottom: 2px solid $basecolor;
 }
 
 .logo-5{
@@ -126,8 +126,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-6{
@@ -135,8 +134,7 @@ export default {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-7{
@@ -144,8 +142,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
+    border-right: 2px solid $basecolor;
 }
 
 .logo-8{
@@ -153,8 +150,6 @@ export default {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $basecolor;
-    border: 1px solid $basecolor;
 }
 
 
@@ -211,15 +206,52 @@ export default {
     }
 }
 
-// Extra
+// Media queries
 
-#extra {
-    width: 100%;
-    height: 100%;
-    display: flex;
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+        .logo-1{
+        border-right: none;
+    }
+
+    .logo-2{
+        border-right: none;
+    }
+
+    .logo-3{
+        border-right: none;
+    }
+
+    .logo-5{
+        border-right: none;
+        border-bottom: 2px solid $basecolor;
+    }
+
+    .logo-6{
+        border-right: none;
+        border-bottom: 2px solid $basecolor;
+    }
+
+    .logo-7{
+        border-right: none;
+        border-bottom: 2px solid $basecolor;
+    }
 }
 
-#last-child {
-    border-right: none;
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .logo-2{
+        border-right: none;
+    }
+
+    .logo-5{
+        border-bottom: 2px solid $basecolor;
+    }
+
+    .logo-6{
+        border-right: none;
+        border-bottom: 2px solid $basecolor;
+    }
 }
+
 </style>

@@ -22,7 +22,7 @@
                         <div class="event-line ">
 
                         </div>
-                        <div class="event-details-container d-flex justify-content-between align-items-center pb-3 col-lg-12 col-sm-12 col-12 pt-2">
+                        <div class="event-details-container d-flex justify-content-between align-items-center pb-3 col-lg-12 col-sm-12 col-12 pt-2 px-2">
                                 <div class="d-flex flex-column">
                                     <h5>{{ name }}</h5>
                                     <p>{{ location }}</p>
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="eventspreview-text-container col-lg-12 col-sm-12 col-12 d-flex justify-content-start align-item-center">
-                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12">VIEW ALL</button>
+                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12" @click="$router.push('events')">VIEW ALL</button>
                     </div>
                 </div>
         

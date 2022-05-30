@@ -81,7 +81,7 @@ export default {
       name: '',
       description: '',
       location: '',
-      time: ''
+      time: '',
     })
     // show information about the current(click) project in the edit form
     // add an onMounted life-hook that will get the user, based on router id 

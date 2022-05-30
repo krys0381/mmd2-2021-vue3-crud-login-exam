@@ -22,7 +22,7 @@
 
                         <div class="event-description-container col-lg-7 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-center p-5">
                          <div class="date-container"></div>
-                           <h1>  {{ date }} </h1>
+                            <h1>{{ date }} </h1>
                             <h5>{{ name }}</h5>
                       
 
@@ -133,32 +133,6 @@
 
     </div> -->
   </div>
-
-
-
-  <!-- <div class="card mt-4">
-    <table class="table m-0">
-      <thead>
-        <tr>
-          <th scope="col">Date</th>
-          <th scope="col">Name</th>
-          <th scope="col">Description</th>
-          <th scope="col">Location</th>
-          <th scope="col">Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="{ id, date, name, description, location, time } in events" :key="id">
-          <td>{{ date }}</td>
-          <td>{{ name }}</td>
-          <td>{{ description }}</td>
-          <td>{{ location }}</td>
-          <td>{{ time }}</td>
-        </tr>
-      </tbody>
-    </table>
-   
-  </div> -->
 </template>
 
 <script>
@@ -237,7 +211,7 @@ export default {
 .eventslist-container {
   // width: 75%;
   background: $basecolor 0% 0% no-repeat padding-box;
-  border: 1px solid $basecolor;
+  border: 2px solid $basecolor;
   opacity: 1;
   display: flex;
   min-height: 623.2px;

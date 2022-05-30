@@ -71,7 +71,7 @@ import { createEvent } from '../../firebase.js' // maybe this make error
        name: '',
        description: '',
        location: '',
-       time: ''
+       time: '',
      })
 
      const onSubmit = async () => {

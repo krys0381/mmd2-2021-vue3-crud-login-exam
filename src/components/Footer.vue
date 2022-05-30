@@ -301,7 +301,7 @@ right: 10%;
   // font-weight: bold;
   z-index: 100;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   // text-transform: uppercase;
   cursor: pointer;
   }
