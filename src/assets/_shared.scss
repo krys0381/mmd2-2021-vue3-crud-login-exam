@@ -11,59 +11,89 @@ $accentdarkcolor: #C7804E;
 @mixin light-heading1 {
     h1 {
         text-align: center;
-        font: normal normal bold 70px Poppins;
+        font: normal normal bold 4rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
         margin: 0;
     }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+     }
 }
 
 @mixin dark-heading1 {
     h1 {
         text-align: center;
-        font: normal normal bold 70px Poppins;
+        font: normal normal bold 4rem Poppins;
         letter-spacing: 0px;
         color: $shadecolor;
         opacity: 1;
         margin: 0;
     }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+     }
 }
 
 @mixin dark-heading2 {
     h2 {
         text-align: left;
-        font: normal normal bold 70px Poppins;
+        font: normal normal bold 4rem Poppins;
         letter-spacing: 0px;
         color: $shadecolor;
         opacity: 1;
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        }
+     }
 }
 
 @mixin light-heading2 {
     h2 {
         text-align: left;
-        font: normal normal bold 70px Poppins;
+        font: normal normal bold 4rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        }
+     }
 }
 
 @mixin light-sub_event_heading2 {
     h2 {
         text-align: left;
-        font: normal normal bold 40px Poppins;
+        font: normal normal bold 2.5rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        }
+     }
 }
 
 @mixin heading3 {
     h3 {
         text-align: center;
-        font: normal normal normal 20px Poppins;
+        font: normal normal normal 1.25rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
@@ -74,7 +104,7 @@ $accentdarkcolor: #C7804E;
 @mixin dark-heading4 {
     h4 {
         text-align: left;
-        font: normal normal normal 18px/27px Poppins;
+        font: normal normal normal 1rem/1.5rem Poppins;
         letter-spacing: 0px;
         color: $shadecolor;
         opacity: 1;
@@ -85,7 +115,7 @@ $accentdarkcolor: #C7804E;
 @mixin light-heading4 {
     h4 {
         text-align: left;
-        font: normal normal normal 18px/27px Poppins;
+        font: normal normal normal 1rem/1.5rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
@@ -96,7 +126,7 @@ $accentdarkcolor: #C7804E;
 @mixin dark-heading5 {
     h5 {
         text-align: left;
-        font: normal normal bold 18px/27px Poppins;
+        font: normal normal bold 1rem/1.5rem Poppins;
         letter-spacing: 0px;
         color: $shadecolor;
         opacity: 1;
@@ -106,7 +136,7 @@ $accentdarkcolor: #C7804E;
 @mixin light-heading5 {
     h5 {
         text-align: left;
-        font: normal normal bold 18px/27px Poppins;
+        font: normal normal bold 1rem/1.5rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
@@ -116,7 +146,7 @@ $accentdarkcolor: #C7804E;
 @mixin heading6 {
     h6 {
         text-align: center;
-        font: normal normal normal 23px Poppins;
+        font: normal normal normal 1.5rem Poppins;
         letter-spacing: 0px;
         color: $whitecolor;
         opacity: 1;
@@ -127,7 +157,7 @@ $accentdarkcolor: #C7804E;
 @mixin dark-paragraph1 {
     p {
         text-align: left;
-        font: normal normal normal 16px Poppins;
+        font: normal normal normal 1rem Poppins;
         letter-spacing: 0px;
         color: $shadecolor;
         opacity: 1;
@@ -138,7 +168,7 @@ $accentdarkcolor: #C7804E;
 @mixin light-paragraph1 {
     p {
         text-align: left;
-        font: normal normal normal 16px Poppins;
+        font: normal normal normal 1rem Poppins;
         letter-spacing: 0px;
         color: $backgroundcolor;
         opacity: 1;
@@ -149,9 +179,16 @@ $accentdarkcolor: #C7804E;
 @mixin date {
     .date {
         text-align: left;
-        font: normal normal bold 42px/27px Poppins;
+        font: normal normal bold 2.5rem/1.5rem Poppins;
         letter-spacing: 0px;
         color: $lightcolor;
         opacity: 1;
     }
+
+    @media (max-width: 768px) {
+        .date {
+            font-size: 1.5rem;
+        }
+     }
 }
+
