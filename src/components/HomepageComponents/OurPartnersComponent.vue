@@ -87,16 +87,21 @@ export default {
 }
 
 .logo-1{
-    background-image: url('../../assets/img/aalborg.png');
-    background-size: cover;
+    background-image: url('../../assets/img/Deloitte_logo-gs.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 2px solid $basecolor;
     border-right: 2px solid $basecolor;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: url('../../assets/img/Deloitte_logo.png');
+    }
 }
 
 .logo-2{
-    background-image: url('../../assets/img/innovationsfonden.png');
+    background-image: url('../../assets/img/vaekstfonden_logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,12 +110,17 @@ export default {
 }
 
 .logo-3{
-    background-image: url('../../assets/img/aalborg.png');
-    background-size: cover;
+    background-image: url('../../assets/img/BE_logo-gs.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-bottom: 2px solid $basecolor;
     border-right: 2px solid $basecolor;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: url('../../assets/img/BE_logo.png');
+    }
 }
 
 .logo-4{
@@ -122,23 +132,33 @@ export default {
 }
 
 .logo-5{
-    background-image: url('../../assets/img/aalborg.png');
+    background-image: url('../../assets/img/aalborg-gs.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-right: 2px solid $basecolor;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: url('../../assets/img/aalborg.png');
+    }
 }
 
 .logo-6{
-    background-image: url('../../assets/img/innovationsfonden.png');
+    background-image: url('../../assets/img/easv-logo-gs.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-right: 2px solid $basecolor;
+    transition: 0.3s;
+
+    &:hover {
+        background-image: url('../../assets/img/easv-logo.png');
+    }
 }
 
 .logo-7{
-    background-image: url('../../assets/img/aalborg.png');
+    background-image: url('../../assets/img/alogo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,7 +166,7 @@ export default {
 }
 
 .logo-8{
-    background-image: url('../../assets/img/innovationsfonden.png');
+    background-image: url('../../assets/img/elb-logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
