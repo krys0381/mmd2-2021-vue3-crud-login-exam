@@ -17,7 +17,7 @@
                                     </div>
                                    
                                  </div>
-                                  <div class="col-lg-5 col-sm-12 col-12 d-flex flex-wrap">
+                                  <div class="col-lg-5 col-sm-12 col-12 d-flex flex-wrap" data-aos="fade-left">
                                         <div class="ourservices-services d-flex justify-content-start flex-column col-lg-6 col-sm-12 col-12 pb-5 px-2">
                                             <img src="../../assets/img/light-bulb.png" width="72" height="72" alt="">
                                             <h5>Inspirational Talks</h5>
@@ -84,6 +84,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 export default {
     
 }
@@ -96,14 +102,6 @@ export default {
 @include dark-heading5;
 @include dark-paragraph1;  
 
-// .ourservices-row {
-//     width: 100%;
-//     height: 100%;
-//     background: $lightcolor 0% 0% no-repeat padding-box;
-//     opacity: 1;
-//     padding: 80px 0;
-// }
-
 .ourservices-component{
      background: $lightcolor;
 }
@@ -112,60 +110,19 @@ export default {
    padding: 80px 0; 
 }
 
-        #line {
-            height: 0;
-            width: 80px;
-            background-color: $shadecolor;
-            border: 1.5px solid $shadecolor;
-            opacity: 1;
-            margin-right: 20px;
-        }
+#line {
+    height: 0;
+    width: 80px;
+    background-color: $shadecolor;
+    border: 1.5px solid $shadecolor;
+    opacity: 1;
+    margin-right: 20px;
+}
 
-// .ourservices-container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
+.ourservices-services {
+    img {
+        margin-bottom: 10px;
+    }
+}
 
-//     // Text
-
-//     .ourservices-text-container {
-//         width: 85%;
-//         height: 100%;
-//         display: flex;
-//         align-items: center;
-//         text-align: left;
-//         margin: 20px 0;
-
-//         #line {
-//             height: 0;
-//             width: 80px;
-//             background-color: $shadecolor;
-//             border: 1.5px solid $shadecolor;
-//             opacity: 1;
-//             margin-right: 20px;
-//         }
-//     }
-
-//     // Services
-
-//     .ourservices-services-container {
-//         display: flex;
-
-//         .ourservices-services {
-//             .services {
-//                 width: 75%;
-//                 display: flex;
-//                 align-items: center;
-//                 text-align: left;
-//                 margin: 20px 0;
-
-//                 img {
-//                     width: 20%;
-//                     object-fit: cover;
-//                 }
-//             }
-//         }
-//     }
-// }
 </style>

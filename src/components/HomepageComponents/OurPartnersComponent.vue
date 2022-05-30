@@ -14,14 +14,14 @@
                         </div>
                 </div>
 
-                <div class="partners-logo-container d-flex flex-wrap justify-content-center align-items-center ">
-                   <div class="logo-container logo-1">  </div>
-                   <div class="logo-container logo-2">  </div>
-                   <div class="logo-container logo-3">  </div>
-                   <div class="logo-container logo-4">  </div>
-                   <div class="logo-container logo-5">  </div>
-                   <div class="logo-container logo-6">  </div>
-                   <div class="logo-container logo-7">  </div>
+                <div class="partners-logo-container d-flex flex-wrap justify-content-center align-items-center" data-aos="fade-up">
+                   <a href="https://www2.deloitte.com/dk/da.html"><div class="logo-container logo-1">  </div></a>
+                   <a href="https://vf.dk"><div class="logo-container logo-2">  </div></a>
+                   <a href="https://www.businessesbjerg.com/da/"><div class="logo-container logo-3">  </div></a>
+                   <a href="https://innovationsfonden.dk/da"><div class="logo-container logo-4">  </div></a>
+                   <a href="https://www.aau.dk"><div class="logo-container logo-5">  </div></a>
+                   <a href="https://www.easv.dk/da/"><div class="logo-container logo-6">  </div></a>
+                   <a href="https://www.ebanklauridsen.dk"><div class="logo-container logo-7">  </div></a>
                    <div class="logo-container logo-8">  </div>
                 </div>
                     <!-- <div class="col-12 p-0">
@@ -44,6 +44,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 export default {
     
 }
@@ -158,15 +164,15 @@ export default {
 }
 
 .logo-7{
-    background-image: url('../../assets/img/alogo.png');
-    background-size: cover;
+    background-image: url('../../assets/img/elb-logo.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-right: 2px solid $basecolor;
 }
 
 .logo-8{
-    background-image: url('../../assets/img/elb-logo.png');
+    background-image: url('../../assets/img/alogo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

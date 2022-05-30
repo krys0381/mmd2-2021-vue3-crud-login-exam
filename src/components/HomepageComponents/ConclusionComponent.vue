@@ -5,7 +5,7 @@
             <div class="row d-flex flex-column align-items-center justify-content-start">
                 <div class="collab-content-container col-lg-6 col-sm-12 col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
                           <h1>Interested in collaboration?</h1>
-                            <button type="button" class="btn btn-primary btn-lg col-lg-12 col-sm-12 col-12 mt-3">LET'S TALK</button>   
+                            <button type="button" class="btn btn-primary btn-lg col-lg-12 col-sm-12 col-12 mt-3" @click="$router.push('contact')" data-aos="flip-up">LET'S TALK</button>   
                 </div>
             </div>
         </div>
@@ -16,6 +16,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 export default {
     
 }

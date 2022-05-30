@@ -12,16 +12,16 @@
                 </div>
             <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-3 d-flex flex-wrap">
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                     <div class="some-image some-1 "></div>
+                    <a href="https://www.linkedin.com/company/techhub-syd/"><div class="some-image some-1 "></div></a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                     <div class="some-image some-2 "></div>
+                    <a href="https://www.linkedin.com/company/techhub-syd/"><div class="some-image some-2 "></div></a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                     <div class="some-image some-3 "></div>
+                    <a href="https://www.linkedin.com/company/techhub-syd/"><div class="some-image some-3 "></div></a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                     <div class="some-image some-4 "></div>
+                    <a href="https://www.linkedin.com/company/techhub-syd/"><div class="some-image some-4 "></div></a>
                 </div>
 
             </div>
@@ -45,7 +45,7 @@
             <div class="col-12 p-0">
                 <div class="followus-container">
                     <div class="followus-btn-container col-lg-6 col-sm-12 col-12">
-                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12">VIEW MORE</button>
+                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12" data-aos="zoom-out-up">VIEW MORE</button>
                     </div>
                 </div>
             </div>
@@ -55,6 +55,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 export default {
     
 }

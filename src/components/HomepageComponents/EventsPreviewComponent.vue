@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="eventspreview-text-container col-lg-12 col-sm-12 col-12 d-flex justify-content-start align-item-center">
-                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12" @click="$router.push('events')">VIEW ALL</button>
+                        <button type="button" class="btn btn-primary btn-lg col-lg-6 col-sm-12 col-12" @click="$router.push('events')" data-aos="zoom-in">VIEW ALL</button>
                     </div>
                 </div>
         
@@ -47,6 +47,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 import { useLoadEvents } from '../../firebase.js'
 
 export default {

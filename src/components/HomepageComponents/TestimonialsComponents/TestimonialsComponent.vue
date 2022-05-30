@@ -20,7 +20,7 @@
                 <div class="testimonials-container">
 
                     <div 
-                    class="item-container col-lg-8 col-sm-12 col-12"
+                    class="item-container col-lg-8 col-sm-12 col-12" data-aos="zoom-in-left"
                     v-for="{ id, quote, author, company } in testimonials" :key="id"
                     >
                         <div class="item1">
@@ -52,6 +52,10 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 import { useLoadTestimonials } from '../../../firebase.js'
 
 export default {

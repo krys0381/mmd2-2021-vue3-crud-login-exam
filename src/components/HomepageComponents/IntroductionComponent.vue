@@ -2,7 +2,7 @@
     <div class="introduction-component container-fluid">
         <div class="introduction-row g-0 container">
             <div class="row d-flex justify-content-between align-items-start">
-                <div class="col-lg-6 col-sm-12 col-12 mb-5">
+                <div class="col-lg-6 col-sm-12 col-12 mb-5" data-aos="fade-right">
                      <iframe class="videoContainer__video" width="x" height="y" src="https://www.youtube.com/embed/GjEsjnm4HpY?controls=1&modestbranding=1&rel=0&autoplay=1" allowfullscreen frameborder="0">
     </iframe> 
                     <!-- <div id="extra">
@@ -38,6 +38,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 export default {
     
 }

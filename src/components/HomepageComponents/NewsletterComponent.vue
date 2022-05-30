@@ -2,12 +2,12 @@
     <div class="newsletter-component container-fluid overflow-hidden">
         <div class="newsletter-row container">
             <div class="row d-flex flex-column align-items-start justify-content-start">
-                    <div class="d-flex justify-content-start align-items-center">
+                    <div class="d-flex justify-content-start align-items-center" data-aos="fade-right">
                             <div id="line"></div>
                             <h4>HOW TO GET UPDATED</h4>
                     </div>
                     <div class="d-flex flex-wrap col-lg-12 col-sm-12 col-12 mb-5 justify-content-between">
-                        <div class="newsletter-content-container col-lg-5 col-sm-12 col-12 ">
+                        <div class="newsletter-content-container col-lg-5 col-sm-12 col-12" data-aos="fade-right">
                                 <h2>NEWSLETTER</h2>
                                 <div><p>Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id,</p></div>
                         </div>
@@ -30,6 +30,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 import emailjs from 'emailjs-com'
 import {ref} from 'vue';
 
