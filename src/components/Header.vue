@@ -54,9 +54,9 @@
                                     <router-link to="/about" class="mb-3">ABOUT</router-link>
                                     <router-link to="/events" class="mb-3">EVENTS</router-link>
                                     <router-link to="/contact" class="mb-3">CONTACT</router-link>
-                                    <a href="#" class="mb-3">FAQ</a>
                                     <a href="#" class="mb-3">START-UPS</a>
-                                    <a href="https://techhubinvest.com/">INVESTORS</a>
+                                    <a href="https://techhubinvest.com/" target="_blank" class="mb-3">INVESTORS</a>
+                                    <router-link to="/admin" >ADMIN</router-link>
                             </div>
                             
                            

@@ -6,7 +6,7 @@
                 <div class="followus-container d-flex flex-column align-items-start justify-content-start">
                     <div class="followus-text-container">
                         <div id="line"></div>
-                        <h4>WHAT'S HAPPENING</h4>
+                        <h4>WHERE TO FIND US IN SOCIAL MEDIA</h4>
                     </div>
                    <h2>FOLLOW US</h2>
                 </div>

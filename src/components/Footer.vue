@@ -1,52 +1,69 @@
 <template>
     <div class="footer container-fluid">
         <div class="container">
-                <div class="footer-row row g-0 d-none d-xl-flex">
-
-                    <div class="col-6 col-sm-3 p-0">
-                        <div class="extra">
-                            <div class="logo-links-container">
-                                <div id="logo-box"><a href="/"><img src="../assets/img/whitelogo.png" alt=""></a></div>
+                <div class="footer-row row g-0 d-none d-xl-flex col-lg-12 align-items-center">
+                    
+                    <div class="footer-menu-row col-12 d-flex align-items-center justify-content-center">
+                            <div class="col-3 p-0">
+                                <!-- <div class="logo-links-container"> -->
+                                    <!-- <div id="logo-box"><a href="/"><img src="../assets/img/whitelogo.png" alt=""></a></div> -->
+                                <!-- </div> -->
+                                <a href="/" class="d-flex justify-content-start align-item-center"><div class="logo-image"> </div></a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 p-0">
-                        <div class="navigation">
-                            <div class="nav">  
-                                <router-link to="/about">About</router-link> 
-                                <router-link to="/events">Events</router-link> 
-                                <router-link to="/contact">Contact</router-link> 
-                                <a href="">Start-ups</a>
-                                <a href="https://techhubinvest.com/">Investors</a>
-                                <router-link to="/admin" class="mb-3">Admin</router-link>
+                             <div class="col-6 p-0 d-flex align-items-center justify-content-center">
+                                <div class="navigation col-12">
+                                    <!-- <div class="nav">   -->
+                                        <router-link to="/about" class="me-3">About</router-link> 
+                                        <router-link to="/events" class="me-3">Events</router-link> 
+                                        <router-link to="/contact" class="me-3">Contact</router-link> 
+                                        <a href="" class="me-3">Start-ups</a>
+                                        <a href="https://techhubinvest.com/" target="_blank" class="me-3">Investors</a>
+                                        <router-link to="/admin" class="">Admin</router-link>
+                                    <!-- </div> -->
+                                </div>
+                                
+                                <!-- <router-view/> -->
                             </div>
-                        </div>
-                        <router-view/>
-                    </div>
-                    <div class="col-sm-3 p-0">
-                        <a href="" target="_blank" class="some-icon-container me-3" >
-                            <img src="../assets/img/linkedin.svg" width="24" height="21" alt="linkedin" >
-                        </a>
+                            <div class="col-3 p-0 d-flex align-items-center justify-content-center">
+                                    <a href="" target="_blank" class="some-icon-container me-3" >
+                                        <img src="../assets/img/linkedin.svg" width="24" height="21" alt="linkedin" >
+                                    </a>
 
-                        <a href="" target="_blank" class="some-icon-container me-3">
-                                <img src="../assets/img/facebook-f-light.svg" width="24" height="21" alt="facebook">
-                        </a>
-                        
-                        <a href="" target="_blank" class="some-icon-container me-3">
-                        <img src="../assets/img/twitter.svg" width="24" height="21" alt="twitter">
-                        </a>
+                                    <a href="" target="_blank" class="some-icon-container me-3">
+                                            <img src="../assets/img/facebook-f-light.svg" width="24" height="21" alt="facebook">
+                                    </a>
+                                    
+                                    <a href="" target="_blank" class="some-icon-container me-3">
+                                    <img src="../assets/img/twitter.svg" width="24" height="21" alt="twitter">
+                                    </a>
 
-                        <a href="" target="_blank" class="some-icon-container">
-                        <img src="../assets/img/youtube.svg" width="24" height="21" alt="youtube" >
-                        </a>
+                                    <a href="" target="_blank" class="some-icon-container">
+                                    <img src="../assets/img/youtube.svg" width="24" height="21" alt="youtube" >
+                                    </a>
+                                </div>
                     </div>
+                                
 
-                    <div class="col-12 p-0">
-                        <div id="rights-container">
-                            <div id="rights"><p>2022 © Techhub Syd. All rights reserved.</p></div>
-                        </div>
-                    </div>
+                                <!-- <div class="col-sm-6 p-0">
+                                    <div class="navigation">
+                                        <div class="nav">  
+                                            <router-link to="/about">About</router-link> 
+                                            <router-link to="/events">Events</router-link> 
+                                            <router-link to="/contact">Contact</router-link> 
+                                            <a href="">Start-ups</a>
+                                            <a href="https://techhubinvest.com/">Investors</a>
+                                            <router-link to="/admin" class="mb-3">Admin</router-link>
+                                        </div>
+                                    </div>
+                                    <router-view/>
+                                </div> -->
+                                
+
+                                <div class="col-12 d-flex p-0 align-items-center justify-content-center">
+                                    <!-- <div id="rights-container"> -->
+                                        <div class="rights-container"><p>2022 © Techhub Syd. All rights reserved.</p></div>
+                                    <!-- </div> -->
+                                </div>
             </div>
              <div class="mobile-menu-container d-flex d-xl-none align-items-center justify-content-between">
                
@@ -79,8 +96,8 @@
                                     <router-link to="/events" class="mb-3">EVENTS</router-link>
                                     <router-link to="/contact" class="mb-3">CONTACT</router-link>
                                     <a href="#" class="mb-3">START-UPS</a>
-                                    <a href="https://techhubinvest.com/">INVESTORS</a>
-                                    <router-link to="/admin" class="mb-3">ADMIN</router-link>
+                                    <a href="https://techhubinvest.com/" target="_blank" class="mb-3">INVESTORS</a>
+                                    <router-link to="/admin" >ADMIN</router-link>
                             </div>
                             
                            
@@ -138,6 +155,15 @@ export default {
 @import "../assets/shared.scss";
 @include light-paragraph1;
 
+
+.logo-image {
+    background-image: url('../assets/img/whitelogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+}
 .footer{
  background-color: $shadecolor;
 }
@@ -147,6 +173,8 @@ export default {
     // background-color: $shadecolor;
     padding: 40px 0 40px 0;
 }
+
+
 
 .logo-links-container {
     display: flex;
@@ -229,7 +257,7 @@ export default {
     }
 }
 
-#rights-container {
+.rights-container {
     display: flex;
     justify-content: center;
     align-items: center;
