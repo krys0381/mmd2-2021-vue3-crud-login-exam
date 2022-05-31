@@ -2,7 +2,7 @@
     <div class="newsletter-component container-fluid overflow-hidden">
         <div class="newsletter-row container">
             <div class="row d-flex flex-column align-items-start justify-content-start">
-                    <div class="d-flex justify-content-start align-items-center" data-aos="fade-right">
+                    <div class="d-flex justify-content-start align-items-center">
                             <div id="line"></div>
                             <h4>HOW TO GET UPDATED</h4>
                     </div>

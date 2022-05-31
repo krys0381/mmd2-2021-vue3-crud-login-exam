@@ -22,7 +22,7 @@
                         <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
                     </div>
                     <div class="team-card-container d-flex flex-column col-lg-6 col-md-12 col-sm-12 col-12">
-                      <div class="team-image">
+                      <div class="team-image" data-aos="zoom-in-down">
                           
                       </div>
                       <div class="team-card-info m-5">
@@ -72,7 +72,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>
@@ -112,7 +118,7 @@
 }
 
 .team-image{
-  background-image: url('../../assets/img/business-man.jpg');
+  background-image: url('../../assets/img/image_3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

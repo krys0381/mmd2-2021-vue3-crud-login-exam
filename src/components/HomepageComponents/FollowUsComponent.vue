@@ -88,28 +88,28 @@ padding: 80px 0;
 }
 
 .some-1{
-    background-image: linear-gradient(#7E42BE19, #7E42BE19), url('../../assets/img/crowd-sportsman.jpg');
+    background-image: linear-gradient(#7E42BE19, #7E42BE19), url('../../assets/img/image_7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .some-2{
-    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/diverse-business.jpg');
+    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/image_8.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .some-3{
-    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/female-speaker.jpg');
+    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/image_6.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .some-4{
-    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/male-speaker.jpg');
+    background-image: linear-gradient(#7E42BE19, #7E42BE19),url('../../assets/img/image_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -27,7 +27,7 @@
                     <img src="../../assets/img/calendar_1.svg" width="28" height="28" alt="calendar" class="pe-3">
                     <p>03 May 2021</p>
                   </div>
-                   <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5">VIEW DETAILS</button>
+                   <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5" data-aos="flip-down">VIEW DETAILS</button>
                  </div>
                  
                </div>
@@ -48,7 +48,7 @@
                       <img src="../../assets/img/calendar_1.svg" width="28" height="28" alt="calendar" class="pe-3">
                       <p>21 Jun 2021</p>
                     </div>
-                    <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5">VIEW DETAILS</button>
+                    <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5" data-aos="flip-down" data-aos-delay="600">VIEW DETAILS</button>
                   </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     <img src="../../assets/img/calendar_1.svg" width="28" height="28" alt="calendar" class="pe-3">
                     <p>13 Jul 2021</p>
                   </div>
-                   <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5">VIEW DETAILS</button>
+                   <button type="button" class="event-btn-details btn btn-primary btn-lg col-xl-6 col-sm-12 col-12 mt-5" data-aos="flip-down" data-aos-delay="900">VIEW DETAILS</button>
                  </div>
               </div>
             </div>
@@ -79,7 +79,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>

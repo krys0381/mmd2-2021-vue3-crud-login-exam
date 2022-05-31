@@ -23,27 +23,27 @@
             </div>
               
           </div>
-          <div class="countdown-container d-flex justify-content-between align-items-center my-5">
-            <div class="day-container d-flex flex-column align-items-center ">
+          <div class="countdown-container d-flex justify-content-between align-items-center my-5" data-aos="zoom-in">
+            <div class="day-container d-flex flex-column align-items-center">
                 <h1>2</h1>
                 <h5>DAYS</h5>
             </div>
-            <div class="hr-container ">
+            <div class="hr-container">
                 <h1>5</h1>
                 <h5>HRS</h5>
             </div>
-            <div class="mins-container ">
+            <div class="mins-container">
                 <h1>3</h1>
                 <h5>MINS</h5>
             </div>
-            <div class="secs-container ">
+            <div class="secs-container">
                 <h1>18</h1>
                 <h5>SECS</h5>
             </div>
           </div>
           <div class="hero-container ">
             <div class="hero-btn ">
-              <button type="button" class="btn btn-primary btn-lg col-12">GET TICKET NOW!</button>
+              <button type="button" class="btn btn-primary btn-lg col-12" data-aos="flip-up">GET TICKET NOW!</button>
             </div>
           </div>
         </div>
@@ -60,7 +60,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>
@@ -75,7 +81,7 @@
 @include light-sub_event_heading2;
 
 .row{
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .container-fluid{
   background: transparent linear-gradient(180deg, #7E42BE 0%, #10041C 100%);

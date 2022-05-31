@@ -3,11 +3,11 @@
     <div class="container ">
       <div class="row ">
           <div class="content-container d-flex flex-column justify-content-center align-items-center mb-5">
-              <h1 class="hero-title">Because starting up a tech business should be possible.</h1>
-              <h3 class="hero-subtitle col-lg-8 my-5">
+              <h1 class="hero-title" data-aos="fade-down-right">Because starting up a tech business should be possible.</h1>
+              <h3 class="hero-subtitle col-lg-8 my-5" data-aos="fade-up-left">
                   We are a community that connects, inspires and helps start-ups, students and investors build their tech business through networking events.
               </h3>
-              <button type="button" class="btn btn-primary btn-lg 2 col-lg-4 col-md-12 col-sm-12 col-12" @click="$router.push('events')">JOIN OUR EVENT NOW!</button>
+              <button type="button" class="btn btn-primary btn-lg 2 col-lg-4 col-md-12 col-sm-12 col-12" @click="$router.push('events')" data-aos="flip-up" data-aos-delay="800">JOIN OUR EVENT NOW!</button>
           </div>
       </div>
     </div>
@@ -16,6 +16,13 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300,
+    duration: 1000
+});
+
 export default {
   
 }

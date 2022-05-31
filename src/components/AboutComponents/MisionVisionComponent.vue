@@ -14,25 +14,25 @@
               </h2>
                <p class="missionvision-text-p">
               Phasellus finibus enim nulla, quis ornare odio facilisis eu. Suspendisse ornare ante sit amet arcu semper, vel eleifend tortor egestas. Aenean luctus, lorem in hendrerit interdum, leo orci egestas diam, ac euismod massa est et turpis. Etiam auctor lectus vel neque convallis pharetra. Ut turpis eros, aliquet non ante id
-            </p>
+              </p>
             </div>
             <div class="missionvision-icons-container col-lg-6 col-sm-12 col-12 d-flex flex-wrap">
-              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2">
+              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2" data-aos="fade-down">
                  <img class="icon-image" src="../../assets/img/calendar.png" width="72" height="72" alt="">
                 <p class="icon-title my-3">To facilitate events</p>
                 <p class="icon-desc">To strengthen the startup and tech eco-system in the southern region through a powerful community.</p>
               </div>
-              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2">
+              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2" data-aos="fade-down">
                  <img class="icon-image" src="../../assets/img/initiative.png" width="72" height="72" alt="">
                 <p class="icon-title my-3">To motivate</p>
                 <p class="icon-desc">To strengthen the startup and tech eco-system in the southern region through a powerful community.</p>
               </div>
-              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2">
+              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2" data-aos="fade-up">
                  <img class="icon-image" src="../../assets/img/puzzle.png" width="72" height="72" alt="">
                 <p class="icon-title my-3">To be a match-maker</p>
                 <p class="icon-desc">Match commercial founders with tech founders to create new tech ventures.</p>
               </div>
-              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2">
+              <div class="icon-item icon-item-1 col-lg-6 col-sm-12 col-12 d-flex flex-column justify-content-start pb-5 px-2" data-aos="fade-up">
                  <img class="icon-image" src="../../assets/img/speaker.png" width="72" height="72" alt="">
                 <p class="icon-title my-3">To inspire</p>
                 <p class="icon-desc">Inspire with inspirational talks from successful tech founders, industry leaders and business angels.</p>
@@ -45,7 +45,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>

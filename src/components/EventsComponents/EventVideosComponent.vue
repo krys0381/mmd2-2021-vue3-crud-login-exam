@@ -14,14 +14,14 @@
         </div>
         <div class="team-member-carousel-container d-flex flex-column justify-content-center col-sm-12 col-12">
          <div class="team-member-carousel d-flex my-5 justify-content-between align-items-center">
-                    <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center">
+                    <div class="team-slider-button left-button d-none d-lg-flex justify-content-center align-items-center" data-aos="zoom-in">
                         <img src="../../assets/img/chevron-left-solid-light.svg" height="40" width="22.87" alt="">
                     </div>
                     <div class="video-container col-lg-6 col-sm-12 col-12">
                         <iframe height="656" src="https://www.youtube.com/embed/GjEsjnm4HpY?controls=1&modestbranding=1&rel=0&autoplay=1"  allowfullscreen></iframe>
                     </div>
                      
-                <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center">
+                <div class="team-slider-button right-button d-none d-lg-flex justify-content-center align-items-center" data-aos="zoom-in">
                   <img src="../../assets/img/chevron-right-solid-purple.svg" height="40" width="22.87" alt="">
                 </div>
         </div>
@@ -45,7 +45,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>

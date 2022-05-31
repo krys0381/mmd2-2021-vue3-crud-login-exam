@@ -10,7 +10,7 @@
               <div class="subtitle-line"></div>
               <h4>HOW IT ALL STARTED</h4>
           </div>
-          <div class="history-text-content-container">
+          <div class="history-text-content-container" data-aos="fade-left">
             <h2 class="my-2">
               OUR HISTORY
             </h2>
@@ -27,7 +27,13 @@
 </template>
 
 <script>
-  export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
+export default {
     
   }
 </script>

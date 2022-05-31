@@ -44,10 +44,10 @@
 
                           <div class="event-description d-flex col-lg-12 col-sm-12 col-12 flex-wrap">
                             <div class="event-btn-ticket col-lg-5 col-sm-12 col-12 me-3 mb-3">
-                                 <button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">GET TICKET</button>
+                                 <button type="button" class=" btn btn-primary btn-lg col-lg-12 col-sm-12 col-12" data-aos="flip-up">GET TICKET</button>
                             </div>
                             <div class="event-btn-details col-lg-5 col-sm-12 col-12">
-                              <button type="button" class="event-btn-details btn btn-primary btn-lg col-lg-12 col-sm-12 col-12">VIEW DETAILS</button>
+                              <button type="button" class="event-btn-details btn btn-primary btn-lg col-lg-12 col-sm-12 col-12" data-aos="flip-down">VIEW DETAILS</button>
                             </div>
                           </div>
 
@@ -136,7 +136,12 @@
 </template>
 
 <script>
-// useload hook + delete import 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    delay: 300
+});
+
 import { useLoadEvents } from '../../firebase.js'
 
 export default {
