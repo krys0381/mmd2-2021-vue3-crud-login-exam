@@ -40,16 +40,6 @@
                         <a href="" target="_blank" class="some-icon-container">
                         <img src="../assets/img/youtube.svg" width="24" height="21" alt="youtube" >
                         </a>
-                        <!-- <div class="extra">
-                            <div class="soc-container">
-                                <div class="soc-links">
-                                    <a href=""><img src="../assets/img/linkedin.svg" alt=""></a>
-                                    <a href=""><img src="../assets/img/facebook.svg" alt=""></a>
-                                    <a href=""><img src="../assets/img/twitter.svg" alt=""></a>
-                                    <a href=""><img src="../assets/img/youtube.svg" alt=""></a>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
 
                     <div class="col-12 p-0">
@@ -352,11 +342,6 @@ right: 10%;
             &:hover {
                 color: $accentlightcolor;
             }
-
-            // &.router-link-exact-active {
-            //   border-bottom: 2px solid $lightcolor;
-             
-            // }
         }
     }
 </style>

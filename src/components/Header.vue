@@ -120,9 +120,6 @@ export default {
     padding:20px 30px;
 }
 
-.close-btn{
-    // padding:0px 30px;
-}
 .header{
     background-color: $basecolor;
 }
@@ -337,62 +334,6 @@ right: 10%;
         
     }
 }
-
-// .mobile-menu-container {
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   object-fit: cover;
-// }
-
-// #nav-container {
-//     // width: 85%;
-//     display: flex;
-//     justify-content: flex-end;
-//     align-items: center;
-
-//     // Navigation
-
-//     .navigation {
-//         // width: 50%;
-//         display: flex;
-//         justify-content: flex-end;
-//         padding: 0 20px 0 0;
-
-//         a {
-//             color: $backgroundcolor;
-//             text-decoration: none;
-//             font: normal normal 500 18px/27px Poppins;
-//             letter-spacing: 0px;
-//             margin: 0 15px;
-
-//             &:hover {
-//                 color: $accentlightcolor;
-//             }
-
-//             &.router-link-exact-active {
-//               border-bottom: 2px solid $lightcolor;
-//             }
-//         }
-//     }
-
-//     // Buttons
-
-//     #btn-box {
-//         // width: 20%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: flex-end;
-
-//         .btn {
-//             border: 1px solid $lightcolor;
-//             opacity: 1;
-//             border-radius: 0;
-//             opacity: 1;
-//             background-color: $basecolor;
-//         }
-//     }
-// }
 
 // Extra
 

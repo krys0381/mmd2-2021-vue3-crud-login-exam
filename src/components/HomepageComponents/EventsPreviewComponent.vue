@@ -72,14 +72,6 @@ export default {
 @include date;
 @include light-paragraph1;
 
-// .eventspreview-row {
-//     width: 100%;
-//     height: 100%;
-//     background: $shadecolor 0% 0% no-repeat padding-box;
-//     opacity: 1;
-//     padding: 80px 0;
-// }
-
 .eventspreview-component{
     background: $shadecolor;
 }
@@ -142,35 +134,6 @@ export default {
     align-items: center;
     flex-direction: column;
 
-    // Picture
-
-    #eventspreview-picture {
-       
-
-        // img {
-        //     width: 90%;
-        //     height: 90%;
-        //     object-fit: cover;
-        // }
-    }
-
-    // Text
-
-  
-    .eventspreview-text-container {
-        // width: 85%;
-        // height: 100%;
-        // display: flex;
-        // align-items: center;
-        // text-align: left;
-        // margin: 20px 0;
-        // color: $backgroundcolor;
-
-        
-
-        
-    }
-
     .eventspreview-list-container {
         // width: 85%;
         background-color: $shadecolor;
@@ -200,18 +163,4 @@ export default {
 
 
 }
-
-// Extra
-
-// #extra {
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// #last-child {
-//     border-bottom: 3px solid $lightcolor;
-// }
 </style>

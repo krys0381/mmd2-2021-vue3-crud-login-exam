@@ -89,40 +89,6 @@ export default {
     width: 100%;
 }
 
-// .team-text-p{
-//   text-align: left; 
-//   color: $shadecolor;
-// }
-
-// .team-card-container{
-//   // min-height: 910px;
-//   // width: 100%;
-//   background-color: $basecolor;
-// }
-
-// .team-image{
-//   background-image: url('../../assets/img/business-man.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   height: 500px;
-// }
-
-// .team-name {
-//   font-weight: bold;
-// }
-
-// .team-position{
-//   opacity: .65;
-// }
-
-// .linkedin-container{
-//   border: 1px solid $backgroundcolor;
-//   width: 40px;
-//   height: 40px;
-// }
-
 .team-slider-button{
   // background: red;
   height: 88px;

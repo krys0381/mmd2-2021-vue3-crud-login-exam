@@ -24,20 +24,6 @@
                    <a href="https://www.ebanklauridsen.dk"><div class="logo-container logo-7">  </div></a>
                    <div class="logo-container logo-8">  </div>
                 </div>
-                    <!-- <div class="col-12 p-0">
-                        <div class="ourpartners-container">
-                            <div class="ourpartners-table">
-                                <div class="ourpartners-table-item-1"><img src="../../assets/img/aalborg.png" alt=""></div>
-                                <div class="ourpartners-table-item-1"><img src="../../assets/img/innovationsfonden.png" alt=""></div>
-                                <div class="ourpartners-table-item-1"><img src="../../assets/img/aalborg.png" alt=""></div>
-                                <div id="last-child" class="ourpartners-table-item-1"><img src="../../assets/img/innovationsfonden.png" alt=""></div>
-                                <div class="ourpartners-table-item-2"><img src="../../assets/img/aalborg.png" alt=""></div>
-                                <div class="ourpartners-table-item-2"><img src="../../assets/img/innovationsfonden.png" alt=""></div>
-                                <div class="ourpartners-table-item-2"><img src="../../assets/img/aalborg.png" alt=""></div>
-                                <div id="last-child" class="ourpartners-table-item-2"><img src="../../assets/img/innovationsfonden.png" alt=""></div>
-                            </div>
-                        </div>
-                    </div> -->
             </div>
         </div>
     </div>
@@ -60,14 +46,6 @@ export default {
 @include dark-heading2;
 @include dark-heading4;
 @include dark-paragraph1; 
-
-// .ourpartners-row {
-//     width: 100%;
-//     height: 100%;
-//     background: $backgroundcolor 0% 0% no-repeat padding-box;
-//     opacity: 1;
-//     padding: 80px 0;
-// }
 
 .ourpartners-component {
     background: $backgroundcolor;
@@ -264,7 +242,6 @@ export default {
     }
 }
 
-// `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
     .logo-2{
         border-right: none;

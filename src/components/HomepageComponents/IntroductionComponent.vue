@@ -5,13 +5,7 @@
                 <div class="col-lg-6 col-sm-12 col-12 mb-5" data-aos="fade-right">
                      <iframe class="videoContainer__video" width="x" height="y" src="https://www.youtube.com/embed/g8VUtUnfiPY" allowfullscreen frameborder="0">
     </iframe> 
-                    <!-- <div id="extra">
-                        <div class="introduction-container">
-                            <div class="introduction-video">
-                                <iframe width="700" height="656" src="https://www.youtube.com/embed/OS8taasZl8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </div>
 
                 <div class=" col-lg-5 col-sm-12 col-12">
@@ -55,13 +49,6 @@ export default {
 @include dark-heading4;
 @include dark-paragraph1;
 
-// .introduction-row {
-//     width: 100%;
-//     height: 100%;
-//     background: $backgroundcolor 0% 0% no-repeat padding-box;
-//     opacity: 1;
-//     padding: 80px 0;
-// }
 
 iframe {
     width: 100%;
@@ -85,11 +72,6 @@ iframe {
 }
 
 .introduction-container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
-    // text-align: left;
 
     // Video
 
@@ -131,12 +113,4 @@ iframe {
         }
     }
 }
-
-/* #extra {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 </style>

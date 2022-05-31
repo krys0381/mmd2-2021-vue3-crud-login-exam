@@ -25,22 +25,6 @@
                 </div>
 
             </div>
-            <!-- <div class="some-posts-container d-flex flex-wrap align-items-center justify-content-center col-sm-12 col-12">
-                <div class="some-image some-1 m-2"></div>
-                <div class="some-image some-2 m-2"></div>
-                <div class="some-image some-3 m-2"></div>
-                <div class="some-image some-4 m-2"></div>
-            </div> -->
-            <!-- <div class="col-12 p-0">
-                <div class="followus-container">
-                    <div class="followus-gallery-container">
-                        <div class="followus-gallery"><img src="../../assets/img/crowd-sportsman.jpg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/diverse-business.jpg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/female-speaker.jpg" alt=""></div>
-                        <div class="followus-gallery"><img src="../../assets/img/male-speaker.jpg" alt=""></div>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="col-12 p-0">
                 <div class="followus-container">
@@ -114,15 +98,6 @@ padding: 80px 0;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-// .followus-row {
-//     width: 100%;
-//     height: 100%;
-//     background: $shadecolor 0% 0% no-repeat padding-box;
-//     opacity: 1;
-//     padding: 80px 0;
-// }
 
 .followus-container {
     display: flex;
