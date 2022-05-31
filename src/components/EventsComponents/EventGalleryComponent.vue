@@ -70,8 +70,8 @@ export default {
 .subtitle-line {
   height: 0;
   width: 80px;
-  background-color: $backgroundcolor;
-  border: 1.5px solid $backgroundcolor;
+  background-color: $shadecolor;
+  border: 1.5px solid $shadecolor;
   opacity: 1;
   margin-right: 20px;
 }
@@ -81,7 +81,7 @@ export default {
 }
 
 .gallery-image {
-    background-image: url('../../assets/img/crowd-sportsman.jpg');
+    background-image: url('../../assets/img/image_5.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
