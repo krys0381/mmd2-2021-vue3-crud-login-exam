@@ -16,7 +16,7 @@
                         <h2>THE EVENTS</h2></div>
 
                     <div 
-                    class=" d-flex flex-column align-items-start justify-content-center col-lg-12 col-sm-12 col-12" 
+                    class=" d-flex flex-column align-items-start justify-content-center col-lg-12 col-sm-12 col-12" @click="$router.push('events')"
                     v-for="{ id, date, name, location } in events" :key="id"
                     >
                         <div class="event-line ">

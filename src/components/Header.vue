@@ -114,6 +114,8 @@ export default {
     // display: flex;
     // background-color: $basecolor;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
 }
 
 .mobile-menu-container {
