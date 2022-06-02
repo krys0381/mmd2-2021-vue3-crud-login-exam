@@ -64,7 +64,7 @@ export const deleteTestimonial = id => {
 
 export const useLoadEvents = () => {
   const events = ref([])
-  const close = eventCollection.onSnapshot(snapshot => {
+  const close = eventCollection.orderBy("date").onSnapshot(snapshot => {
     events.value = snapshot.docs.map(doc => ({
       id: doc.id, 
       ...doc.data()

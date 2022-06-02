@@ -19,7 +19,7 @@
             </div>
             <div class="hero-location-time d-flex align-items-center justify-content-start">
               <img src="../../assets/img/timetable_lightpurple.png" width="28" height="28" alt="time and date" class="me-2">
-              <p>19 May 2022, 7:00pm</p>
+              <p>04 May 2022, 7:00pm</p>
             </div>
               
           </div>
